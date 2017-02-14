@@ -5,11 +5,11 @@ import { RootComponent }  from './root.component';
 import { LeafComponent }  from './leaf/leaf.component';
 
 @NgModule({
-  imports:      [ BrowserModule ],
-  declarations: [
-    RootComponent,
-    LeafComponent
-   ],
-  bootstrap:    [ RootComponent ]
+    imports:      [ BrowserModule ],
+    declarations: [
+        RootComponent,
+        LeafComponent
+    ],
+    bootstrap:    [ RootComponent ]
 })
 export class TreeModule { }

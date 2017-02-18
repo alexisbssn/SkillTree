@@ -3,12 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { RootComponent }  from './root.component';
 import { LeafComponent }  from './leaf/leaf.component';
+import { NodeComponent }  from './node/node.component';
 
 @NgModule({
     imports:      [ BrowserModule ],
     declarations: [
         RootComponent,
-        LeafComponent
+        LeafComponent,
+        NodeComponent
     ],
     bootstrap:    [ RootComponent ]
 })

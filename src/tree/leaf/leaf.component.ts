@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Skill } from "../model/skill";
 
 @Component({
     moduleId: module.id,
@@ -7,5 +8,5 @@ import { Component, Input } from '@angular/core';
 })
 export class LeafComponent  {
     @Input()
-    name: string;
+    skill: Skill;
 }

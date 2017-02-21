@@ -1,0 +1,5 @@
+<p-pickList [source]="Available" [target]="Selected" sourceHeader="Available Skills" targetHeader="Selected Skills" [responsive]="true">
+    <template let-skill pTemplate="item">
+        <tree-leaf [skill]="skill"></tree-leaf>
+    </template>
+</p-pickList>

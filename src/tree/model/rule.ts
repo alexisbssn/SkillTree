@@ -5,4 +5,5 @@ export class Rule{
     public Description: string;
     public Type: string;
     public Subject: Ruleable | undefined;
+    public Value : number;
 }

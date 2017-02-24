@@ -28,6 +28,21 @@ export class RootComponent  {
             Rules: []
         },
         {
+            Name: "Frostbite",
+            Description: "2 damage",
+            Rules: []
+        },
+        {
+            Name: "Frostbite",
+            Description: "2 damage",
+            Rules: []
+        },
+        {
+            Name: "Frostbite",
+            Description: "2 damage",
+            Rules: []
+        },
+        {
             Name: "Entangle",
             Description: "2 damage",
             Rules: []

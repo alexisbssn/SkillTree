@@ -4,7 +4,6 @@ import { PickListModule } from 'primeng/primeng';
 
 import { RootComponent }  from './root.component';
 import { LeafComponent }  from './leaf/leaf.component';
-import { NodeComponent }  from './node/node.component';
 import { PickListComponent }  from './pickList/pickList.component';
 
 @NgModule({
@@ -15,7 +14,6 @@ import { PickListComponent }  from './pickList/pickList.component';
     declarations: [
         RootComponent,
         LeafComponent,
-        NodeComponent,
         PickListComponent
     ],
     bootstrap:    [ RootComponent ]

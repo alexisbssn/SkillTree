@@ -5,27 +5,47 @@ export abstract class Ruleable {
     public Rules: Array<Rule>;
     public Name: string;
     public abstract PointsIn(): number;
-    isValid(currentStats: Array<Ruleable>): boolean{
+    isValid(): boolean{
         var _rule: any;
-        for(_rule in this.Rules){
+        for(_rule of this.Rules){
             var rule: Rule = _rule;
             var _ruleable: any;
             var found: boolean;
-            for(_ruleable in currentStats){
-                var ruleable : Ruleable = _ruleable;
-                found = false;
-                if(rule.Subject.Name == ruleable.Name){
-                    if(ruleable.PointsIn() >= rule.Value){
-                        found = true;
-                        break;
-                    }
-                    else {
+
+            if(rule.Type === "cost"){
+                // TODO implement
+            }
+            switch(rule.Type){
+                case ">=":
+                    if(rule.Subject.PointsIn() < rule.Value){
                         return false;
                     }
-                }
-            }
-            if(found){
-                return false;
+                    break;
+                case "<=":
+                    if(rule.Subject.PointsIn() > rule.Value){
+                        return false;
+                    }
+                    break;
+                case ">":
+                    if(rule.Subject.PointsIn() <= rule.Value){
+                        return false;
+                    }
+                    break;
+                case "<":
+                    if(rule.Subject.PointsIn() >= rule.Value){
+                        return false;
+                    }
+                    break;
+                case "=":
+                    if(rule.Subject.PointsIn() === rule.Value){
+                        return false;
+                    }
+                    break;
+                case "!=":
+                    if(rule.Subject.PointsIn() !== rule.Value){
+                        return false;
+                    }
+                    break;
             }
         }
         return true;

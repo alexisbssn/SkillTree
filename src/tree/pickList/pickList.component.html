@@ -1,4 +1,6 @@
-<p-pickList [source]="Available" [target]="Selected" sourceHeader="Available Skills" targetHeader="Selected Skills" [responsive]="true" [sourceStyle]="{'height':'100%'}" [targetStyle]="{'height':'100%'}">
+<p-pickList [source]="Available" [target]="Selected" sourceHeader="Available Skills"
+targetHeader="Selected Skills" [responsive]="true" [sourceStyle]="{'height':'100%'}" [targetStyle]="{'height':'100%'}"
+(MoveToTarget)="PickSkill(event.items)" (MoveToSource)="RemoveSkill(event.items)">
     <template let-skill pTemplate="item">
         <tree-leaf [skill]="skill"></tree-leaf>
     </template>

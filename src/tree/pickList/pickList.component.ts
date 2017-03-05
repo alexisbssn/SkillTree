@@ -15,13 +15,15 @@ export class PickListComponent  {
     @Input()
     Selected: Array<Skill>;
 
-    PickSkill(skill: Skill): void{
-        console.log(skill);
-        // TODO: this never gets called
-        skill.AddPoint();
+    PickSkills(skills: Skill[]): void{
+        for(var skill of skills){
+            skill.AddPoint();
+        }
     }
 
-    RemoveSkill(skill: Skill): void{
-        skill.RemovePoint();
+    RemoveSkills(skills: Skill[]): void{
+        for(var skill of skills){
+            skill.RemovePoint();
+        }
     }
 }

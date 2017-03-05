@@ -14,7 +14,7 @@ export class RootComponent  {
     _entangle: Skill;
 
     constructor(){
-        this.testSkill1 = new Skill("FireBall", "Launch a fiery ball of light that does 5 burning damage", [], 0);
+        this.testSkill1 = new Skill("Fireball", "Launch a fiery ball of light that does 5 burning damage", [], 0);
 
         this._entangle = new Skill(
             "Entangle",
@@ -25,6 +25,7 @@ export class RootComponent  {
 
         this.SelectedSkillz = new Array<Skill>();
         this.Skillz = [
+            this._entangle,
             new Skill(
                 "Fireball",
                 "2 damage",
@@ -57,7 +58,6 @@ export class RootComponent  {
                 [],
                 0
             ),
-            this._entangle,
             new Skill(
                 "Magic missile",
                 "2 damage",

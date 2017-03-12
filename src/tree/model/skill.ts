@@ -1,5 +1,5 @@
 import { Ruleable } from './ruleable';
-import { Rule } from './rule';
+import { Rule } from './rules/rule';
 
 export class Skill extends Ruleable{
     public Description: string;

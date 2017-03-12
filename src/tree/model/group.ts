@@ -2,6 +2,14 @@ import { Skill } from './skill';
 import { Ruleable } from './ruleable';
 
 export class Group extends Ruleable {
-    public Skills : Array<Skill>;
-    public PointsIn(): number { return this.Skills.length; }
+    public Items : Array<Ruleable>;
+    public PointsIn(): number
+    {
+        var pts = 0;
+        var item: Ruleable;
+        for(item of this.Items){
+            pts = pts + item.PointsIn();
+        }
+        return pts;
+    }
 }

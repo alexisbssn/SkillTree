@@ -6,4 +6,5 @@ export class Rule{
     public Type: string;
     public Subject: Ruleable | undefined;
     public Value : number;
+    public Rules : Array<Rule>; // Rule is checked only if its own rules are valid
 }

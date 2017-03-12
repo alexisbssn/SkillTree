@@ -15,6 +15,9 @@ export abstract class Ruleable {
             if(rule.Type === "cost"){
                 // TODO implement
             }
+            if(rule.Type === "maximum"){
+                // TODO implement
+            }
             switch(rule.Type){
                 case ">=":
                     if(rule.Subject.PointsIn() < rule.Value){

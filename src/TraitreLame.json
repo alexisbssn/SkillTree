@@ -1,0 +1,77 @@
+[
+    {
+        "Name":"Habiletés et Techniques",
+        "Rules": [],
+        "Items": [
+            {
+                "Name":"Discipline Commune",
+                "Rules": [],
+                "Items": [
+                    {
+                        "Name": "Endurance",
+                        "Description": "+1 point de vie maximum",
+                        "Rules": [
+                            {
+                                "Name": "Max 3",
+                                "Description": "Maximum 3 Endurances",
+                                "Type": "maximum",
+                                "Value": 3
+                            },
+                            {
+                                "Name": "Xp cost 1",
+                                "Description": "Pas assez de points d'expérience disponibles",
+                                "Type": "cost",
+                                "Value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Énergie",
+                        "Description": "+1 point d'énergie maximum",
+                        "Rules": [
+                            {
+                                "Name": "Max 3",
+                                "Description": "Maximum 3 Énergies",
+                                "Type": "maximum",
+                                "Value": 3
+                            },
+                            {
+                                "Name": "Xp cost 1",
+                                "Description": "Pas assez de points d'expérience disponibles",
+                                "Type": "cost",
+                                "Value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Discipline Combattante",
+                        "Rules":[
+                            {
+                                "Name": "Max 2",
+                                "Description": "Maximum de 2 points par Discipline",
+                                "Type": "maximum",
+                                "Value": 2
+                            }
+                        ],
+                        "Items":[]
+                    }
+                ]
+            },
+        ]
+    },
+    {
+        "Name":"Production",
+        "Rules": [],
+        "Items": []
+    },
+    {
+        "Name":"Rituels",
+        "Rules": [],
+        "Items": []
+    },
+    {
+        "Name":"Rituels de Création",
+        "Rules": [],
+        "Items": []
+    }
+]

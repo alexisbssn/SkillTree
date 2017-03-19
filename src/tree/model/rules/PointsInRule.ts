@@ -1,8 +1,8 @@
 import { Rule } from './rule';
 import { Ruleable } from '../ruleable';
 
-export class TargetCountRule extends Rule{
-    public Type: string = "Target";
+export class PointsInRule extends Rule{
+    public Type: string = "PointsIn";
 
     public Subject: Ruleable | undefined;
     public Value : number;
@@ -10,22 +10,22 @@ export class TargetCountRule extends Rule{
 
     public IsValid(subject: Ruleable): boolean{
         switch(this.Operator){
-            case ">=":
+            case "<":
                 if(this.Subject.PointsIn() < this.Value){
                     return false;
                 }
                 break;
-            case "<=":
+            case ">":
                 if(this.Subject.PointsIn() > this.Value){
                     return false;
                 }
                 break;
-            case ">":
+            case "<=":
                 if(this.Subject.PointsIn() <= this.Value){
                     return false;
                 }
                 break;
-            case "<":
+            case ">=":
                 if(this.Subject.PointsIn() >= this.Value){
                     return false;
                 }

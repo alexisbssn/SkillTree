@@ -1,12 +1,12 @@
 import { Rule } from './rule';
 import { Ruleable } from '../ruleable';
 
-export class MaxPointsRule extends Rule{
-    public Type: string = "MaxPoints";
+export class MaxChildrenRule extends Rule{
+    public Type: string = "MaxChildren";
 
     public Value : number;
 
     public IsValid(subject: Ruleable): boolean{
-        return subject.PointsIn() < this.Value;
+        return subject.ChildrenIn() < this.Value;
     }
 }

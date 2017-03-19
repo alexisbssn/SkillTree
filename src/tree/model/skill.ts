@@ -11,6 +11,14 @@ export class Skill extends Ruleable{
     };
     private _pointsIn: number;
 
+    public UniqueIn(): number{
+        return this._pointsIn > 0 ? 1 : 0;
+    }
+
+    public ChildrenIn() : number{
+        return 0;
+    }
+
     public constructor(name: string, description: string, rules: Array<Rule>, pointsIn: number){
         super();
         this.Rules = rules;

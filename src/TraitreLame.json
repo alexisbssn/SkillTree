@@ -21,6 +21,7 @@
                                 "Name": "Xp cost 1",
                                 "Description": "Pas assez de points d'expérience disponibles",
                                 "Type": "cost",
+                                "CostType": "xp",
                                 "Value": 1
                             }
                         ]
@@ -39,24 +40,184 @@
                                 "Name": "Xp cost 1",
                                 "Description": "Pas assez de points d'expérience disponibles",
                                 "Type": "cost",
+                                "CostType": "xp",
                                 "Value": 1
                             }
                         ]
-                    },
-                    {
-                        "Name": "Discipline Combattante",
-                        "Rules":[
-                            {
-                                "Name": "Max 2",
-                                "Description": "Maximum de 2 points par Discipline",
-                                "Type": "maximum",
-                                "Value": 2
-                            }
-                        ],
-                        "Items":[]
                     }
                 ]
             },
+            {
+                "id": "#DisciplineCombattante",
+                "Name": "Discipline Combattante",
+                "Rules":[
+                    {
+                        "Name": "Max 2",
+                        "Description": "Maximum de 2 points par Discipline",
+                        "Type": "maximum",
+                        "Value": 2
+                    },
+                    {
+                        "Name": "Discipline cost 1",
+                        "Description": "Maximum de disciplines atteint",
+                        "Type": "cost",
+                        "CostType": "Discipline",
+                        "Value": 1
+                    },
+                    {
+                        "Name": "Max chilren per discipline",
+                        "Description": "Maximum 2 habiletés par discipline",
+                        "Type": "MaxChildrenPer",
+                        "Value": 2,
+                        "Subject": { "$ref": "#DisciplineCombattante" }
+                    }
+                ],
+                "Items":[
+                    {
+                        "id": "#HabileteDiscipline",
+                        "Name": "Discipline",
+                        "Rules": [
+                            {
+                                "Name": "Habilete cost 1",
+                                "Description": "Maximum d'habiletés atteint",
+                                "Type": "cost",
+                                "CostType": "Habilete",
+                                "Value": 1
+                            },
+                            {
+                                "Name": "Max 3",
+                                "Description": "Maximum 3 xp dans cette discipline",
+                                "Type": "MaxChildren",
+                                "Value": 3,
+                                "Rules": [
+                                    {
+                                        "Name": "Has 1 Point",
+                                        "Description": "lorsque 1 point",
+                                        "Type": "PointsIn",
+                                        "Operator": "=",
+                                        "Value": 1
+                                    }
+                                ]
+                            },
+                            {
+                                "Name": "Max 2",
+                                "Description": "Maximum 2 points dans une même habileté",
+                                "Type": "maximum",
+                                "Value": 2
+                            },
+                            {
+                                "Name": "Max 5",
+                                "Description": "Maximum 5 xp dans cette discipline",
+                                "Type": "MaxChildren",
+                                "Value": 5,
+                                "Rules": []
+                            }
+                        ],
+                        "Items":[
+                            {
+                                "Name": "Résilience",
+                                "Description": "[passif] n’a pas à simuler la douleur en combat",
+                                "Rules":[
+                                    {
+                                        "Name": "Max 1",
+                                        "Description": "Maximum 1 point dans cette compétence",
+                                        "Type": "maximum",
+                                        "Value": 1
+                                    }
+                                    {
+                                        "Name": "HasDiscipline",
+                                        "Description": "Doit avoir l'habileté Discipline pour choisir cette compétence",
+                                        "Type": "PointsIn",
+                                        "Operator": ">=",
+                                        "Value": 1,
+                                        "Subject": { "$ref": "#HabileteDiscipline" }
+                                    }
+                                ]
+                            },
+                            {
+                                "Name": "Endurcie",
+                                "Description": "[passif] peur est remplacé par foudroyé",
+                                "Rules": [
+                                    {
+                                        "Name": "Max 1",
+                                        "Description": "Maximum 1 point dans cette compétence",
+                                        "Type": "maximum",
+                                        "Value": 1
+                                    }
+                                    {
+                                        "Name": "HasDiscipline",
+                                        "Description": "Doit avoir l'habileté Discipline pour choisir cette compétence",
+                                        "Type": "PointsIn",
+                                        "Operator": ">=",
+                                        "Value": 1,
+                                        "Subject": { "$ref": "#HabileteDiscipline" }
+                                    }
+                                ]
+                            },
+                            {
+                                "Name": "Loyauté",
+                                "Description": "[passif] sous domination, peut refuser de trahir sa faction",
+                                "Rules": [
+                                    {
+                                        "Name": "Max 1",
+                                        "Description": "Maximum 1 point dans cette compétence",
+                                        "Type": "maximum",
+                                        "Value": 1
+                                    }
+                                    {
+                                        "Name": "HasDiscipline",
+                                        "Description": "Doit avoir l'habileté Discipline pour choisir cette compétence",
+                                        "Type": "PointsIn",
+                                        "Operator": ">=",
+                                        "Value": 1,
+                                        "Subject": { "$ref": "#HabileteDiscipline" }
+                                    }
+                                ]
+                            },
+                            {
+                                "Name": "Doctrine",
+                                "Description": "[passif] choisit une cible qu’il peut atteindre en mêlée lorsqu’enragé",
+                                "Rules": [
+                                    {
+                                        "Name": "Max 1",
+                                        "Description": "Maximum 1 point dans cette compétence",
+                                        "Type": "maximum",
+                                        "Value": 1
+                                    }
+                                    {
+                                        "Name": "HasDiscipline",
+                                        "Description": "Doit avoir l'habileté Discipline pour choisir cette compétence",
+                                        "Type": "PointsIn",
+                                        "Operator": ">=",
+                                        "Value": 1,
+                                        "Subject": { "$ref": "#HabileteDiscipline" }
+                                    }
+                                ]
+                            },
+                            {
+                                "Name": "Vigilance",
+                                "Description": "[pointe la cible et attend 5 secondes] perce l’effet caché",
+                                "Rules": [
+                                    {
+                                        "Name": "Max 1",
+                                        "Description": "Maximum 1 point dans cette compétence",
+                                        "Type": "maximum",
+                                        "Value": 1
+                                    }
+                                    {
+                                        "Name": "HasDiscipline",
+                                        "Description": "Doit avoir l'habileté Discipline pour choisir cette compétence",
+                                        "Type": "PointsIn",
+                                        "Operator": ">=",
+                                        "Value": 1,
+                                        "Subject": { "$ref": "#HabileteDiscipline" }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
         ]
     },
     {

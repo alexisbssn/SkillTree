@@ -3,6 +3,7 @@ import { Rule } from './rules/rule';
 
 export class Skill extends Ruleable{
     public Description: string;
+    public Type: string = "Skill";
     public PointsIn(): number{
         return this._pointsIn;
     };
@@ -19,13 +20,13 @@ export class Skill extends Ruleable{
         return 0;
     }
 
-    public constructor(name: string, description: string, rules: Array<Rule>, pointsIn: number){
-        super();
-        this.Rules = rules;
-        this.Description = description;
-        this.Name = name;
-        this._pointsIn = pointsIn;
-    }
+    //public constructor(name: string, description: string, rules: Array<Rule>, pointsIn: number){
+    //    super();
+    //    this.Rules = rules;
+    //    this.Description = description;
+    //    this.Name = name;
+    //    this._pointsIn = pointsIn;
+    //}
 
     AddPoint(): void{
         this._pointsIn += 1;

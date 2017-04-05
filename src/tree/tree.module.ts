@@ -1,4 +1,5 @@
 import { NgModule }      from '@angular/core';
+import { HttpModule }      from '@angular/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { PickListModule } from 'primeng/primeng';
 
@@ -9,7 +10,8 @@ import { PickListComponent }  from './pickList/pickList.component';
 @NgModule({
     imports:      [
         BrowserModule,
-        PickListModule
+        PickListModule,
+        HttpModule
      ],
     declarations: [
         RootComponent,

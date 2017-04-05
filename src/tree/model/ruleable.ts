@@ -7,6 +7,7 @@ export abstract class Ruleable {
     public abstract PointsIn(): number;
     public abstract UniqueIn(): number;
     public abstract ChildrenIn(): number;
+    public abstract Type: string;
     isValid(): boolean{
         var rule: Rule;
         for(rule of this.Rules){

@@ -1,30 +1,36 @@
 import { Component } from '@angular/core';
+import { RuleablesDAOService } from './DAL/RuleablesDAO.service';
 import { Skill } from "./model/skill";
+import { Ruleable } from "./model/ruleable";
 
 @Component({
     moduleId: module.id,
     selector: 'tree-root',
-    templateUrl: './root.component.html'
+    templateUrl: './root.component.html',
+    providers: [ RuleablesDAOService ]
 })
 export class RootComponent  {
     name = 'Angular';
     testSkill1: Skill;
-    Skillz:Array<Skill>;
+    Skillz:Array<Ruleable>;
     SelectedSkillz: Array<Skill>;
     _entangle: Skill;
 
-    constructor(){
-        this.testSkill1 = new Skill("Fireball", "Launch a fiery ball of light that does 5 burning damage", [], 0);
+    constructor(private dataSource : RuleablesDAOService){
+        //this.testSkill1 = new Skill("Fireball", "Launch a fiery ball of light that does 5 burning damage", [], 0);
 
-        this._entangle = new Skill(
+        /*this._entangle = new Skill(
             "Entangle",
             "2 damage",
             [],
             0
-        );
+        );*/
 
         this.SelectedSkillz = new Array<Skill>();
-        this.Skillz = [
+        this.Skillz = new Array<Skill>();
+
+        dataSource.GetData('../TraitreLame.json').subscribe(ruleable => this.Skillz.push(ruleable));
+        /*this.Skillz = [
             this._entangle,
             new Skill(
                 "Fireball",
@@ -88,6 +94,6 @@ export class RootComponent  {
                 [],
                 0
             )
-        ]
+        ]*/
     }
 }

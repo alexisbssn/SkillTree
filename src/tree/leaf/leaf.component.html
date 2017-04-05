@@ -1,3 +1,5 @@
-<h2>{{skill.Name}}</h2>
-<div>{{skill.Description}}</div>
-<div>{{skill.isValid()}}</div>
+
+<div [class.bg-red]="!skill.isValid()">
+    <h2>{{skill.Name}}</h2>
+    <div>{{skill.Description}}</div>
+</div>

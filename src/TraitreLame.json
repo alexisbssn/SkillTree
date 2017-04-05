@@ -1,14 +1,17 @@
 [
     {
         "Name":"Habiletés et Techniques",
+        "Type": "Group",
         "Rules": [],
         "Items": [
             {
                 "Name":"Discipline Commune",
+                "Type": "Group",
                 "Rules": [],
                 "Items": [
                     {
                         "Name": "Endurance",
+                        "Type": "Skill",
                         "Description": "+1 point de vie maximum",
                         "Rules": [
                             {
@@ -28,6 +31,7 @@
                     },
                     {
                         "Name": "Énergie",
+                        "Type": "Skill",
                         "Description": "+1 point d'énergie maximum",
                         "Rules": [
                             {
@@ -50,6 +54,7 @@
             {
                 "id": "#DisciplineCombattante",
                 "Name": "Discipline Combattante",
+                "Type": "Group",
                 "Rules":[
                     {
                         "Name": "Max 2",
@@ -76,6 +81,7 @@
                     {
                         "id": "#HabileteDiscipline",
                         "Name": "Discipline",
+                        "Type": "Group",
                         "Rules": [
                             {
                                 "Name": "Habilete cost 1",
@@ -95,7 +101,8 @@
                                         "Description": "lorsque 1 point",
                                         "Type": "PointsIn",
                                         "Operator": "=",
-                                        "Value": 1
+                                        "Value": 1,
+                                        "Subject": { "$ref": "#HabileteDiscipline" }
                                     }
                                 ]
                             },
@@ -116,6 +123,7 @@
                         "Items":[
                             {
                                 "Name": "Résilience",
+                                "Type": "Skill",
                                 "Description": "[passif] n’a pas à simuler la douleur en combat",
                                 "Rules":[
                                     {
@@ -123,7 +131,7 @@
                                         "Description": "Maximum 1 point dans cette compétence",
                                         "Type": "maximum",
                                         "Value": 1
-                                    }
+                                    },
                                     {
                                         "Name": "HasDiscipline",
                                         "Description": "Doit avoir l'habileté Discipline pour choisir cette compétence",
@@ -136,6 +144,7 @@
                             },
                             {
                                 "Name": "Endurcie",
+                                "Type": "Skill",
                                 "Description": "[passif] peur est remplacé par foudroyé",
                                 "Rules": [
                                     {
@@ -143,7 +152,7 @@
                                         "Description": "Maximum 1 point dans cette compétence",
                                         "Type": "maximum",
                                         "Value": 1
-                                    }
+                                    },
                                     {
                                         "Name": "HasDiscipline",
                                         "Description": "Doit avoir l'habileté Discipline pour choisir cette compétence",
@@ -156,6 +165,7 @@
                             },
                             {
                                 "Name": "Loyauté",
+                                "Type": "Skill",
                                 "Description": "[passif] sous domination, peut refuser de trahir sa faction",
                                 "Rules": [
                                     {
@@ -163,7 +173,7 @@
                                         "Description": "Maximum 1 point dans cette compétence",
                                         "Type": "maximum",
                                         "Value": 1
-                                    }
+                                    },
                                     {
                                         "Name": "HasDiscipline",
                                         "Description": "Doit avoir l'habileté Discipline pour choisir cette compétence",
@@ -176,6 +186,7 @@
                             },
                             {
                                 "Name": "Doctrine",
+                                "Type": "Skill",
                                 "Description": "[passif] choisit une cible qu’il peut atteindre en mêlée lorsqu’enragé",
                                 "Rules": [
                                     {
@@ -183,7 +194,7 @@
                                         "Description": "Maximum 1 point dans cette compétence",
                                         "Type": "maximum",
                                         "Value": 1
-                                    }
+                                    },
                                     {
                                         "Name": "HasDiscipline",
                                         "Description": "Doit avoir l'habileté Discipline pour choisir cette compétence",
@@ -196,6 +207,7 @@
                             },
                             {
                                 "Name": "Vigilance",
+                                "Type": "Skill",
                                 "Description": "[pointe la cible et attend 5 secondes] perce l’effet caché",
                                 "Rules": [
                                     {
@@ -203,7 +215,7 @@
                                         "Description": "Maximum 1 point dans cette compétence",
                                         "Type": "maximum",
                                         "Value": 1
-                                    }
+                                    },
                                     {
                                         "Name": "HasDiscipline",
                                         "Description": "Doit avoir l'habileté Discipline pour choisir cette compétence",
@@ -222,16 +234,19 @@
     },
     {
         "Name":"Production",
+        "Type": "Group",
         "Rules": [],
         "Items": []
     },
     {
         "Name":"Rituels",
+        "Type": "Group",
         "Rules": [],
         "Items": []
     },
     {
         "Name":"Rituels de Création",
+        "Type": "Group",
         "Rules": [],
         "Items": []
     }

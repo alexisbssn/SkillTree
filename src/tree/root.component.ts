@@ -21,7 +21,7 @@ export class RootComponent  {
         this.SelectedSkillz = new Array<Skill>();
         this.Skillz = new Array<Skill>();
         this.Rulebook = new Array<Ruleable>();
-        dataSource.GetData('../TraitreLame.json').subscribe(ruleable => {
+        dataSource.GetData('../SentiersDeLOubli.json').subscribe(ruleable => {
             this.Rulebook.push(ruleable);
             this.Skillz = this.Skillz.concat(this.FlattenRuleable(ruleable));
         });

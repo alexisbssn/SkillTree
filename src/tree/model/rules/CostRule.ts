@@ -10,5 +10,6 @@ export class CostRule extends Rule{
     public IsValid(subject: Ruleable): boolean{
         return true;
         // TODO Implement
+
     }
 }

@@ -3,7 +3,7 @@ import { Ruleable } from './ruleable';
 
 export class Group extends Ruleable {
     public Items : Array<Ruleable>;
-    public Type: string = "Rule";
+    public Type: string = "Group";
     public PointsIn(): number
     {
         var pts = 0;

@@ -119,6 +119,7 @@ export class RuleablesDAOService {
             instance.CostType = this.CheckUndef((<CostRule>untyped).CostType, 1);
             break;
           default:
+            console.log("Got invalid rule type: " + untyped.Type);
             return undefined;
       }
 

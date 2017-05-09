@@ -20,6 +20,11 @@ export class Skill extends Ruleable{
         return 0;
     }
 
+    public constructor(){
+        super();
+        this._pointsIn = 0;
+    }
+
     //public constructor(name: string, description: string, rules: Array<Rule>, pointsIn: number){
     //    super();
     //    this.Rules = rules;

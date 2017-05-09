@@ -17,13 +17,13 @@
                             {
                                 "Name": "Max 3",
                                 "Description": "Maximum 3 Endurances",
-                                "Type": "maximum",
+                                "Type": "MaxPoints",
                                 "Value": 3
                             },
                             {
                                 "Name": "Xp cost 1",
                                 "Description": "Pas assez de points d'expérience disponibles",
-                                "Type": "cost",
+                                "Type": "Cost",
                                 "CostType": "xp",
                                 "Value": 1
                             }
@@ -37,13 +37,13 @@
                             {
                                 "Name": "Max 3",
                                 "Description": "Maximum 3 Énergies",
-                                "Type": "maximum",
+                                "Type": "MaxPoints",
                                 "Value": 3
                             },
                             {
                                 "Name": "Xp cost 1",
                                 "Description": "Pas assez de points d'expérience disponibles",
-                                "Type": "cost",
+                                "Type": "Cost",
                                 "CostType": "xp",
                                 "Value": 1
                             }
@@ -59,13 +59,13 @@
                     {
                         "Name": "Max 2",
                         "Description": "Maximum de 2 points par Discipline",
-                        "Type": "maximum",
+                        "Type": "MaxPoints",
                         "Value": 2
                     },
                     {
                         "Name": "Discipline cost 1",
                         "Description": "Maximum de disciplines atteint",
-                        "Type": "cost",
+                        "Type": "Cost",
                         "CostType": "Discipline",
                         "Value": 1
                     },
@@ -86,7 +86,7 @@
                             {
                                 "Name": "Habilete cost 1",
                                 "Description": "Maximum d'habiletés atteint",
-                                "Type": "cost",
+                                "Type": "Cost",
                                 "CostType": "Habilete",
                                 "Value": 1
                             },
@@ -109,7 +109,7 @@
                             {
                                 "Name": "Max 2",
                                 "Description": "Maximum 2 points dans une même habileté",
-                                "Type": "maximum",
+                                "Type": "MaxPoints",
                                 "Value": 2
                             },
                             {
@@ -129,7 +129,7 @@
                                     {
                                         "Name": "Max 1",
                                         "Description": "Maximum 1 point dans cette compétence",
-                                        "Type": "maximum",
+                                        "Type": "MaxPoints",
                                         "Value": 1
                                     },
                                     {
@@ -150,7 +150,7 @@
                                     {
                                         "Name": "Max 1",
                                         "Description": "Maximum 1 point dans cette compétence",
-                                        "Type": "maximum",
+                                        "Type": "MaxPoints",
                                         "Value": 1
                                     },
                                     {
@@ -171,7 +171,7 @@
                                     {
                                         "Name": "Max 1",
                                         "Description": "Maximum 1 point dans cette compétence",
-                                        "Type": "maximum",
+                                        "Type": "MaxPoints",
                                         "Value": 1
                                     },
                                     {
@@ -192,7 +192,7 @@
                                     {
                                         "Name": "Max 1",
                                         "Description": "Maximum 1 point dans cette compétence",
-                                        "Type": "maximum",
+                                        "Type": "MaxPoints",
                                         "Value": 1
                                     },
                                     {
@@ -213,7 +213,7 @@
                                     {
                                         "Name": "Max 1",
                                         "Description": "Maximum 1 point dans cette compétence",
-                                        "Type": "maximum",
+                                        "Type": "MaxPoints",
                                         "Value": 1
                                     },
                                     {

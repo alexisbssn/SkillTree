@@ -34,4 +34,9 @@ export class Group extends Ruleable {
         }
         return pts;
     }
+
+    public constructor(){
+        super();
+        this.Items = new Array<Ruleable>();
+    }
 }

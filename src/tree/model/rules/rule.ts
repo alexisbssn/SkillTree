@@ -10,4 +10,8 @@ export abstract class Rule{
     public Rules : Array<Rule>;
 
     public abstract IsValid(subject: Ruleable): boolean;
+
+    public constructor(){
+        this.Rules = new Array<Rule>();
+    }
 }

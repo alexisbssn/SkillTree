@@ -17,4 +17,8 @@ export abstract class Ruleable {
         }
         return true;
     }
+
+    public constructor(){
+        this.Rules = new Array<Rule>();
+    }
 }

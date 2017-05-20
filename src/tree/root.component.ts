@@ -39,4 +39,8 @@ export class RootComponent  {
         }
         return skills;
     }
+
+    private LogRulebook(){
+        console.log(this.Rulebook);
+    }
 }

@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { RuleablesDAOService } from './DAL/RuleablesDAO.service';
-import { Skill } from "./model/skill";
-import { Group } from "./model/group";
-import { Ruleable } from "./model/ruleable";
+import { Group } from "../model/group";
+import { Skill } from "../model/skill";
+import { Ruleable } from "../model/ruleable";
+import { RuleablesDAOService } from './DAL/ruleablesDAO.service'
 
 @Component({
     moduleId: module.id,

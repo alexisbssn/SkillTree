@@ -7,11 +7,26 @@
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
         "lib": [ "es2015", "dom" ],
-        "noImplicitAny": true,
         "suppressImplicitAnyIndexErrors": true,
-        "types": ["node"]
+        "typeRoots": [
+            "../node_modules/@types"
+        ],
+        "types": ["node"],
+        "declaration": false,
+        "mapRoot": "/",
+        "noEmitOnError": true,
+        "noImplicitAny": true,
+        "rootDir": ".",
+        "sourceMap": true,
+        "inlineSources": true
     },
     "exclude": [
         "node_modules/*"
-    ]
+    ],
+    "filesGlob": [
+      "**/*.ts"
+    ],
+    "atom": {
+      "rewriteTsconfig": false
+    }
 }

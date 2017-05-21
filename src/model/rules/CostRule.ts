@@ -8,8 +8,7 @@ export class CostRule extends Rule{
     public Value : number;
 
     public IsValid(subject: Ruleable): boolean{
+        //TODO implement
         return true;
-        // TODO Implement
-
     }
 }

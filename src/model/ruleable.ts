@@ -1,13 +1,17 @@
 import { Rule } from './rules/rule';
 import { Group } from './group';
+import { Player } from './player';
 
 export abstract class Ruleable {
     public Rules: Array<Rule>;
     public Name: string;
-    public abstract PointsIn(): number;
+    protected _pointsIn: number;
+    public abstract Type: string;
     public abstract UniqueIn(): number;
     public abstract ChildrenIn(): number;
-    public abstract Type: string;
+    public PointsIn(): number{
+        return this._pointsIn;
+    }
     isValid(): boolean{
         var rule: Rule;
         for(rule of this.Rules){
@@ -16,5 +20,19 @@ export abstract class Ruleable {
             }
         }
         return true;
+    }
+
+    public Pick(): void{
+        this._pointsIn += 1;
+    }
+
+    public UnPick(): void{
+        if(this._pointsIn > 0){
+            this._pointsIn -= 1;
+        }
+    }
+
+    public constructor(){
+        this.Rules = new Array<Rule>();
     }
 }

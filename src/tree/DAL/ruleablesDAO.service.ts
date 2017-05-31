@@ -1,15 +1,16 @@
 import { Injectable }    from '@angular/core';
 import { Http, Response } from '@angular/http';
-import { Ruleable } from '../model/ruleable';
-import { Group } from '../model/group';
-import { Skill } from '../model/skill';
-import { Rule } from '../model/rules/rule';
-import { PointsInRule } from '../model/rules/PointsInRule';
-import { MaxPointsRule } from '../model/rules/MaxPointsRule';
-import { MaxPointsPerRule } from '../model/rules/MaxPointsPerRule';
-import { MaxChildrenRule } from '../model/rules/MaxChildrenRule';
-import { MaxChildrenPerRule } from '../model/rules/MaxChildrenPerRule';
-import { CostRule } from '../model/rules/CostRule';
+import { Ruleable } from '../../model/ruleable';
+import { Group } from '../../model/group';
+import { Skill } from '../../model/skill';
+import { Rule } from '../../model/rules/rule';
+import { PointsInRule } from '../../model/rules/PointsInRule';
+import { MaxPointsRule } from '../../model/rules/MaxPointsRule';
+import { MaxPointsPerRule } from '../../model/rules/MaxPointsPerRule';
+import { MaxChildrenRule } from '../../model/rules/MaxChildrenRule';
+import { MaxChildrenPerRule } from '../../model/rules/MaxChildrenPerRule';
+import { ParentValidRule } from '../../model/rules/ParentValidRule';
+import { CostRule } from '../../model/rules/CostRule';
 import { ReplaySubject } from 'rxjs/ReplaySubject';
 import { Subject } from 'rxjs/Subject';
 import { Observer } from 'rxjs/Observer';
@@ -48,17 +49,19 @@ export class RuleablesDAOService {
             break;
           case "Group":
             instance = new Group();
-            instance.Items = new Array<Ruleable>();
             let items = this.CheckUndef((<Group>untyped).Items, new Array<Ruleable>())
             for(let item of items){
-                instance.Items.push(this.InstanciateRuleable(item));
+                let ruleable = this.InstanciateRuleable(item);
+                let rule = new ParentValidRule();
+                rule.Parent = instance;
+                ruleable.Rules.push(rule);
+                instance.Items.push(ruleable);
             }
             break;
         default:
             return undefined;
       }
       let rules = this.CheckUndef(untyped.Rules, new Array<Rule>());
-      instance.Rules = new Array<Rule>();
       for(let rule of rules){
           instance.Rules.push(this.InstanciateRule(rule));
       }
@@ -124,7 +127,6 @@ export class RuleablesDAOService {
       }
 
       let rules = this.CheckUndef(untyped.Rules, new Array<Rule>());
-      instance.Rules = new Array<Rule>();
       for(let rule of rules){
           instance.Rules.push(this.InstanciateRule(rule));
       }

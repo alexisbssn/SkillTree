@@ -7,6 +7,8 @@ import { RootComponent }  from './root.component';
 import { LeafComponent }  from './leaf/leaf.component';
 import { PickListComponent }  from './pickList/pickList.component';
 
+import { RuleablesDAOService } from './DAL/ruleablesDAO.service'
+
 @NgModule({
     imports:      [
         BrowserModule,
@@ -18,6 +20,7 @@ import { PickListComponent }  from './pickList/pickList.component';
         LeafComponent,
         PickListComponent
     ],
-    bootstrap:    [ RootComponent ]
+    bootstrap:    [ RootComponent ],
+    providers: [ RuleablesDAOService ]
 })
 export class TreeModule { }

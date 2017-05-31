@@ -4,15 +4,6 @@ import { Ruleable } from './ruleable';
 export class Group extends Ruleable {
     public Items : Array<Ruleable>;
     public Type: string = "Group";
-    public PointsIn(): number
-    {
-        var pts = 0;
-        var item: Ruleable;
-        for(item of this.Items){
-            pts = pts + item.PointsIn();
-        }
-        return pts;
-    }
 
     public UniqueIn(): number
     {
@@ -33,5 +24,10 @@ export class Group extends Ruleable {
             }
         }
         return pts;
+    }
+
+    public constructor(){
+        super();
+        this.Items = new Array<Ruleable>();
     }
 }

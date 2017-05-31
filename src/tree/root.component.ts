@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
-import { RuleablesDAOService } from './DAL/RuleablesDAO.service';
-import { Skill } from "./model/skill";
-import { Group } from "./model/group";
-import { Ruleable } from "./model/ruleable";
+import { Group } from "../model/group";
+import { Skill } from "../model/skill";
+import { Ruleable } from "../model/ruleable";
+import { Player } from "../model/player";
+import { RuleablesDAOService } from './DAL/ruleablesDAO.service'
 
 @Component({
     moduleId: module.id,
@@ -21,7 +22,8 @@ export class RootComponent  {
         this.SelectedSkillz = new Array<Skill>();
         this.Skillz = new Array<Skill>();
         this.Rulebook = new Array<Ruleable>();
-        dataSource.GetData('../TraitreLame.json').subscribe(ruleable => {
+        dataSource.GetData('../SentiersDeLOubli.json').subscribe(ruleable => {
+            Player.GetInstance().SkillBook.push(ruleable);
             this.Rulebook.push(ruleable);
             this.Skillz = this.Skillz.concat(this.FlattenRuleable(ruleable));
         });
@@ -38,5 +40,21 @@ export class RootComponent  {
             skills.push(<Skill>ruleable);
         }
         return skills;
+    }
+
+    private GetAvailablePoints(){
+        return Player.GetInstance().GetAvailablePoints("competence");
+    }
+
+    private AddSkillPoint(type: string){
+        Player.GetInstance().AddSkillPoints("competence", 1);
+    }
+
+    private RemoveSkillPoint(type: string){
+        Player.GetInstance().AddSkillPoints("competence", -1);
+    }
+
+    private LogRulebook(){
+        console.log(this.Rulebook);
     }
 }

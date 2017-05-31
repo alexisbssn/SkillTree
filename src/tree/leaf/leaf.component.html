@@ -1,5 +1,8 @@
 
-<div [class.bg-red]="!skill.isValid()">
+<div>
     <h2>{{skill.Name}}</h2>
     <div>{{skill.Description}}</div>
+    <button [class.bg-red]="!skill.isValid()" (click)="skill.Pick()">+</button>
+    <button [class.bg-red]="skill.PointsIn() == 0" (click)="skill.UnPick()">-</button>
+    <div>{{skill.PointsIn()}}</div>
 </div>

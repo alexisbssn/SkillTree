@@ -1,0 +1,682 @@
+[
+    {
+        "Name":"Habiletés de combat",
+        "Type": "Group",
+        "Rules": [],
+        "Items": [
+            {
+                "Name": "Résistance",
+                "Type": "Skill",
+                "Description": "+2 PV maximum supplémentaires par point de compétence utilisé",
+                "Rules": [
+                    {
+                        "Name": "Max Résistance",
+                        "Description": "Maximum 3 Résistances",
+                        "Type": "MaxPoints",
+                        "Value": 3
+                    },
+                    {
+                        "Name": "Xp cost 1",
+                        "Description": "Pas assez de points d'expérience disponibles",
+                        "Type": "Cost",
+                        "CostType": "competence",
+                        "Value": 1
+                    }
+                ]
+            },
+            {
+                "Name": "Force de rage",
+                "Type": "Skill",
+                "Description": "En combat, le personnage concentre sa force dans un coup. Ce coup fait un dégât supplémentaire. Peut être utilisé une fois par combat, par point de compétence utilisé.",
+                "Rules": [
+                    {
+                        "Name": "Max Force de rage",
+                        "Description": "Maximum 6 Forces de rage",
+                        "Type": "MaxPoints",
+                        "Value": 6
+                    },
+                    {
+                        "Name": "Xp cost 1",
+                        "Description": "Pas assez de points d'expérience disponibles",
+                        "Type": "Cost",
+                        "CostType": "competence",
+                        "Value": 1
+                    }
+                ]
+            },
+            {
+                "Name": "Précision",
+                "Type": "Skill",
+                "Description": "Les projectiles de lancer font 2 points de dégât supplémentaires pour un coup. Peut être utilisé une fois par combat, par point de compétence utilisé. N'affecte pas les fusils.",
+                "Rules": [
+                    {
+                        "Name": "Max Précision",
+                        "Description": "Maximum 4 Précision",
+                        "Type": "MaxPoints",
+                        "Value": 4
+                    },
+                    {
+                        "Name": "Xp cost 1",
+                        "Description": "Pas assez de points d'expérience disponibles",
+                        "Type": "Cost",
+                        "CostType": "competence",
+                        "Value": 1
+                    }
+                ]
+            },
+            {
+                "Name": "Désarmer",
+                "Type": "Skill",
+                "Description": "En frappant un coup sur l'arme d'un adversaire, il est désarmé. Peut être utilisé une fois par combat.",
+                "Rules": [
+                    {
+                        "Name": "Max Désarmer",
+                        "Description": "Maximum 1 Désarmer",
+                        "Type": "MaxPoints",
+                        "Value": 1
+                    },
+                    {
+                        "Name": "Xp cost 2",
+                        "Description": "Pas assez de points d'expérience disponibles",
+                        "Type": "Cost",
+                        "CostType": "competence",
+                        "Value": 2
+                    }
+                ]
+            },
+            {
+                "Name": "Pulvériser",
+                "Type": "Skill",
+                "Description": "En frappant l'épaule d'un adversaire avec une arme contondante, celui-ci est foudroyé. Un élan de 180 degrés doit être pris, sans quoi la compétence n'a pas d'effet. Peut être utilisé une fois par combat.",
+                "Rules": [
+                    {
+                        "Name": "Max Pulvériser",
+                        "Description": "Maximum 1 Pulvériser",
+                        "Type": "MaxPoints",
+                        "Value": 1
+                    },
+                    {
+                        "Name": "Xp cost 2",
+                        "Description": "Pas assez de points d'expérience disponibles",
+                        "Type": "Cost",
+                        "CostType": "competence",
+                        "Value": 2
+                    }
+                ]
+            },
+            {
+                "Name": "Force extrême",
+                "Type": "Skill",
+                "Description": "Permet de retenir une personne par le bras en disant fort : « Force extrême ». La victime est paralysée. Si la victime a aussi force extrême, il faut être deux personnes pour la maîtriser.",
+                "Rules": [
+                    {
+                        "Name": "Max Force extrême",
+                        "Description": "Maximum 1 Force extrême",
+                        "Type": "MaxPoints",
+                        "Value": 1
+                    },
+                    {
+                        "Name": "Xp cost 2",
+                        "Description": "Pas assez de points d'expérience disponibles",
+                        "Type": "Cost",
+                        "CostType": "competence",
+                        "Value": 2
+                    }
+                ]
+            },
+            {
+                "Name": "Esquive",
+                "Type": "Skill",
+                "Description": "Permet d'éviter un coup en disant fort «  Esquive  ». L'utilisateur ne compte pas les dégâts pour le dernier coup reçu (il y a moins de 5 secondes). Peut être utilisé une fois par combat, par point de compétence utilisé",
+                "Rules": [
+                    {
+                        "Name": "Max Esquive",
+                        "Description": "Maximum 3 Esquives",
+                        "Type": "MaxPoints",
+                        "Value": 3
+                    },
+                    {
+                        "Name": "Xp cost 1",
+                        "Description": "Pas assez de points d'expérience disponibles",
+                        "Type": "Cost",
+                        "CostType": "competence",
+                        "Value": 1
+                    }
+                ]
+            },
+            {
+                "_commment": "changer ce skill beaucoup trop faible",
+                "Name": "Sauvegarde contre la magie",
+                "Type": "Skill",
+                "Description": "Annule les effets d'un sort dirigé vers le joueur, une fois par combat.",
+                "Rules": [
+                    {
+                        "Name": "Max Sauvegarde magie",
+                        "Description": "Maximum 1 Sauvegarde contre la magie",
+                        "Type": "MaxPoints",
+                        "Value": 1
+                    },
+                    {
+                        "Name": "Xp cost 2",
+                        "Description": "Pas assez de points d'expérience disponibles",
+                        "Type": "Cost",
+                        "CostType": "competence",
+                        "Value": 2
+                    }
+                ]
+            },
+            {
+                "Name": "Fuite",
+                "Type": "Skill",
+                "Description": "Permet de se sauver en courant très rapidement en disant fort «  Fuite  ». L'utilisateur ne doit pas transporter d'objets encombrants dans ses mains. Peut être utilisé deux fois par gn, par point de compétence utilisé",
+                "Rules": [
+                    {
+                        "Name": "Max Fuite",
+                        "Description": "Maximum 3 Fuites",
+                        "Type": "MaxPoints",
+                        "Value": 3
+                    },
+                    {
+                        "Name": "Xp cost 1",
+                        "Description": "Pas assez de points d'expérience disponibles",
+                        "Type": "Cost",
+                        "CostType": "competence",
+                        "Value": 1
+                    }
+                ]
+            },
+            {
+                "Name": "Armure",
+                "Type": "Skill",
+                "Description": "Double le nombre de points d'armure de l'armure portée par le personnage.",
+                "Rules": [
+                    {
+                        "Name": "Max Armure",
+                        "Description": "Maximum 1 Armure",
+                        "Type": "MaxPoints",
+                        "Value": 1
+                    },
+                    {
+                        "Name": "Xp cost 2",
+                        "Description": "Pas assez de points d'expérience disponibles",
+                        "Type": "Cost",
+                        "CostType": "competence",
+                        "Value": 2
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Name":"Habiletés de fourberie",
+        "Type": "Group",
+        "Rules": [],
+        "Items": [
+            {
+                "Name": "Déguisement",
+                "Type": "Skill",
+                "Description": "Permet à la personne d'avoir accès à des costumes, masques, maquillage et perruques pour déguiser de façon convaincante son personnage. Un seul costume par GN, mais sans limite de temps ou de fois permises.",
+                "Rules": [
+                    {
+                        "Name": "Max Déguisement",
+                        "Description": "Maximum 1 Déguisement",
+                        "Type": "MaxPoints",
+                        "Value": 1
+                    },
+                    {
+                        "Name": "Xp cost 1",
+                        "Description": "Pas assez de points d'expérience disponibles",
+                        "Type": "Cost",
+                        "CostType": "competence",
+                        "Value": 1
+                    }
+                ]
+            },
+            {
+                "Name": "Expert en falsification",
+                "Type": "Skill",
+                "Description": "Niveau 1 : La personne pourra savoir si un document est un faux ou un original.\nNiveau 2 : Permet à la personne de faire de faux documents ayant l'air de vrais aux yeux du commun des mortels. La personne pourra avoir accès à des parchemins et des sceaux semblables à ceux utilisé par l'animation.",
+                "Rules": [
+                    {
+                        "Name": "Max Expert en falsification",
+                        "Description": "Maximum 2 niveaux: Expert en falsification",
+                        "Type": "MaxPoints",
+                        "Value": 2
+                    },
+                    {
+                        "Name": "Xp cost 1",
+                        "Description": "Pas assez de points d'expérience disponibles",
+                        "Type": "Cost",
+                        "CostType": "competence",
+                        "Value": 1
+                    }
+                ]
+            },
+            {
+                "Name": "Crochetage",
+                "Type": "Skill",
+                "Description": "Permet de débarrer des serrures, des coffres, etc. sans avoir recours à une clef. Cette habileté est utilisable avec les serrures qui sont identifiées à cet effet.",
+                "Rules": [
+                    {
+                        "Name": "Max Crochetage",
+                        "Description": "Maximum 1 Crochetage",
+                        "Type": "MaxPoints",
+                        "Value": 1
+                    },
+                    {
+                        "Name": "Xp cost 1",
+                        "Description": "Pas assez de points d'expérience disponibles",
+                        "Type": "Cost",
+                        "CostType": "competence",
+                        "Value": 1
+                    }
+                ]
+            },
+            {
+                "Name": "Vol à la tire",
+                "Type": "Skill",
+                "Description": "En agrafant un item à une bourse ou un sac, celui qui exercera le vol aura droit au  tiers de la fortune contenue dans le contenant ciblé. (arrondi à la faveur de la victime) Un objet peut aussi être ciblé si le voleur en connaît l'existence. Le voleur doit aller voir l'animation pour récupérer son butin, ou leur avertir du vol de l'objet en question.",
+                "Rules": [
+                    {
+                        "Name": "Max Vol à la tire",
+                        "Description": "Maximum 1 Vol à la tire",
+                        "Type": "MaxPoints",
+                        "Value": 1
+                    },
+                    {
+                        "Name": "Xp cost 2",
+                        "Description": "Pas assez de points d'expérience disponibles",
+                        "Type": "Cost",
+                        "CostType": "competence",
+                        "Value": 2
+                    }
+                ]
+            },
+            {
+                "Name": "Poser des pièges",
+                "Type": "Skill",
+                "Description": "La personne installe un dispositif de ficelle, et reste près. La personne l'activant perdra des points de vie et sera contraint de reculer d'un grand pas. Un piège peut-être récupéré après usage et il est possible de désengager ses propres pièges sans perdre de points. On doit annoncer les dégâts à la victime. Si camouflé, on ne se révèle pas.\nNiveau 1 : 2 PV\nNiveau 2 : 4 PV\nNiveau 3 : 5 PV. Si le joueur a 9 PV ou moins (avant dégâts), il tombe à 0",
+                "Rules": [
+                    {
+                        "Name": "Max piege",
+                        "Description": "Maximum 3 niveaux: Poser des pièges",
+                        "Type": "MaxPoints",
+                        "Value": 3
+                    },
+                    {
+                        "Name": "Xp cost 1",
+                        "Description": "Pas assez de points d'expérience disponibles",
+                        "Type": "Cost",
+                        "CostType": "competence",
+                        "Value": 1
+                    }
+                ]
+            },
+            {
+                "Name": "Camouflage",
+                "Type": "Skill",
+                "Description": "La personne se cache, en retrait des regards. Donne l'effet Caché au personnage. Le personnage de peut pas bouger tant qu'il est caché. Toute armure de métal (cuir clouté exclu) empêche de se camoufler.",
+                "Rules": [
+                    {
+                        "Name": "Max Camouflage",
+                        "Description": "Maximum 1 Camouflage",
+                        "Type": "MaxPoints",
+                        "Value": 1
+                    },
+                    {
+                        "Name": "Xp cost 1",
+                        "Description": "Pas assez de points d'expérience disponibles",
+                        "Type": "Cost",
+                        "CostType": "competence",
+                        "Value": 1
+                    }
+                ]
+            },
+            {
+                "Name": "Attaque furtive",
+                "Type": "Skill",
+                "Description": "Le joueur fait une attaque précise dans le dos de son adversaire. Le joueur qui a un niveau plus haut peut choisir d'utiliser les effets plus faibles. Non-utilisable avec force de rage. Utilisable une fois par 10 secondes.\nNiveau 1 : +2 dégâts à l'attaque\nNiveau 2 : +2 dégâts à l'attaque, la victime trébuche.\nNiveau 3 : +4 dégâts à l'attaque",
+                "Rules": [
+                    {
+                        "Name": "Max Attaque furtive",
+                        "Description": "Maximum 3 niveaux: Attaque furtive",
+                        "Type": "MaxPoints",
+                        "Value": 3
+                    },
+                    {
+                        "Name": "Xp cost 2",
+                        "Description": "Pas assez de points d'expérience disponibles",
+                        "Type": "Cost",
+                        "CostType": "competence",
+                        "Value": 2
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Name":"Habiletés de métier",
+        "Type": "Group",
+        "Rules": [],
+        "Items": [
+            {
+                "Name": "Fabrication de potions",
+                "Type": "Skill",
+                "Description": "Le joueur prend connaissance de la méthode de fabrication de potions de base, ainsi que la connaissance de l'utilisation de deux ingrédients.",
+                "Rules": [
+                    {
+                        "Name": "Max fab potions",
+                        "Description": "Maximum 1 Fabrication de potions",
+                        "Type": "MaxPoints",
+                        "Value": 1
+                    },
+                    {
+                        "Name": "Xp cost 2",
+                        "Description": "Pas assez de points d'expérience disponibles",
+                        "Type": "Cost",
+                        "CostType": "competence",
+                        "Value": 2
+                    }
+                ]
+            },
+            {
+                "Name": "Fabrication de poisons",
+                "Type": "Skill",
+                "Description": "Le joueur prend connaissance de la méthode de fabrication de poisons de base, ainsi que la connaissance de l'utilisation de deux ingrédients.\nPermet aussi d'appliquer des poisons sur des armes tranchantes.",
+                "Rules": [
+                    {
+                        "Name": "Max fab poisons",
+                        "Description": "Maximum 1 Fabrication de poisons",
+                        "Type": "MaxPoints",
+                        "Value": 1
+                    },
+                    {
+                        "Name": "Xp cost 2",
+                        "Description": "Pas assez de points d'expérience disponibles",
+                        "Type": "Cost",
+                        "CostType": "competence",
+                        "Value": 2
+                    }
+                ]
+            },
+            {
+                "Name": "Application de poisons",
+                "Type": "Skill",
+                "Description": "Permet d'appliquer des poisons sur des armes tranchantes.",
+                "Rules": [
+                    {
+                        "Name": "Max application poisons",
+                        "Description": "Maximum 1 Application de poisons",
+                        "Type": "MaxPoints",
+                        "Value": 1
+                    },
+                    {
+                        "Name": "Xp cost 1",
+                        "Description": "Pas assez de points d'expérience disponibles",
+                        "Type": "Cost",
+                        "CostType": "competence",
+                        "Value": 1
+                    }
+                ]
+            },
+            {
+                "Name": "Écriture de parchemins",
+                "Type": "Skill",
+                "Description": "Écriture de parchemins magiques. Il faut qu'un sort soit lancé sur le parchemin pour que celui-ci devienne chargé. Doit savoir lire et écrire pour utiliser la compétence.\nN'importe qui sachant lire peut utiliser le parchemin et lancer le sort. Le parchemin est détruit.",
+                "Rules": [
+                    {
+                        "Name": "Max Écriture de parchemins",
+                        "Description": "Maximum 1 Écriture de parchemins",
+                        "Type": "MaxPoints",
+                        "Value": 1
+                    },
+                    {
+                        "Name": "Xp cost 1",
+                        "Description": "Pas assez de points d'expérience disponibles",
+                        "Type": "Cost",
+                        "CostType": "competence",
+                        "Value": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Name":"Habiletés de sociales",
+        "Type": "Group",
+        "Rules": [],
+        "Items": [
+            {
+                "Name": "Lire et écrire",
+                "Type": "Skill",
+                "Description": "Sinon le personnage est illettré, selon la race.",
+                "Rules": [
+                    {
+                        "Name": "Max Lire et écrire",
+                        "Description": "Maximum 1 Lire et écrire",
+                        "Type": "MaxPoints",
+                        "Value": 1
+                    },
+                    {
+                        "Name": "Xp cost 1",
+                        "Description": "Pas assez de points d'expérience disponibles",
+                        "Type": "Cost",
+                        "CostType": "competence",
+                        "Value": 1
+                    }
+                ]
+            },
+            {
+                "Name": "Richesse",
+                "Type": "Skill",
+                "Description": "Donne 25 pièces d'argent de plus que le montant initial, par point de compétence utilisé.",
+                "Rules": [
+                    {
+                        "Name": "Xp cost 1",
+                        "Description": "Pas assez de points d'expérience disponibles",
+                        "Type": "Cost",
+                        "CostType": "competence",
+                        "Value": 1
+                    }
+                ]
+            },
+            {
+                "Name": "Marchandage",
+                "Type": "Skill",
+                "Description": "Donne accès au marché entre les jeux. Les prix et disponibilités d'objets changent selon le niveau de la compétence. (maximum 5)",
+                "Rules": [
+                    {
+                        "Name": "Max Marchandage",
+                        "Description": "Maximum 5 Marchandage",
+                        "Type": "MaxPoints",
+                        "Value": 5
+                    },
+                    {
+                        "Name": "Xp cost 1",
+                        "Description": "Pas assez de points d'expérience disponibles",
+                        "Type": "Cost",
+                        "CostType": "competence",
+                        "Value": 1
+                    }
+                ]
+            },
+            {
+                "Name": "Diplomatie",
+                "Type": "Skill",
+                "Description": "Permet de savoir si une affirmation est vraie. Il faut dire « Diplomatie » après l'affirmation, puis la victime doit répondre par « c'est vrai » ou « c'est faux »\nImmunise à Baratin.",
+                "Rules": [
+                    {
+                        "Name": "Max Diplomatie",
+                        "Description": "Maximum 1 Diplomatie",
+                        "Type": "MaxPoints",
+                        "Value": 1
+                    },
+                    {
+                        "Name": "Xp cost 2",
+                        "Description": "Pas assez de points d'expérience disponibles",
+                        "Type": "Cost",
+                        "CostType": "competence",
+                        "Value": 2
+                    }
+                ]
+            },
+            {
+                "Name": "Mensonge",
+                "Type": "Skill",
+                "Description": "Immunise aux effets de Diplomatie et de Discours.",
+                "Rules": [
+                    {
+                        "Name": "Max Mensonge",
+                        "Description": "Maximum 1 Mensonge",
+                        "Type": "MaxPoints",
+                        "Value": 1
+                    },
+                    {
+                        "Name": "Xp cost 1",
+                        "Description": "Pas assez de points d'expérience disponibles",
+                        "Type": "Cost",
+                        "CostType": "competence",
+                        "Value": 1
+                    }
+                ]
+            },
+            {
+                "Name": "Discours",
+                "Type": "Skill",
+                "Description": "Tant que l'utilisateur continue à parler, les personnes autour sont paralysées en l'écoutant. Il faut dire « Discours » avant de commencer son discours. Les victimes ne sont pas conscientes qu'elles sont paralysées par le discours. (C'est comme une distraction, simplement)\nLe discours n'a pas d'effet tant que les personnages ne s'arrêtent pas pour écouter le propos. (en combat, sourds, orcs, etc.)",
+                "Rules": [
+                    {
+                        "Name": "Max Discours",
+                        "Description": "Maximum 1 Discours",
+                        "Type": "MaxPoints",
+                        "Value": 1
+                    },
+                    {
+                        "Name": "Xp cost 2",
+                        "Description": "Pas assez de points d'expérience disponibles",
+                        "Type": "Cost",
+                        "CostType": "competence",
+                        "Value": 2
+                    }
+                ]
+            },
+            {
+                "Name": "Baratin",
+                "Type": "Skill",
+                "Description": "Permet à l'utilisateur de convaincre un groupe de personnes d'un fait, sauf ceux qui ont vu le fait en question de leurs propres yeux.\nPour utiliser : Il faut parler sans arrêt, sans se faire interrompre, durant 30 secondes. On dit ensuite « Baratin » et les personnages sont convaincus.",
+                "Rules": [
+                    {
+                        "Name": "Max Baratin",
+                        "Description": "Maximum 1 Baratin",
+                        "Type": "MaxPoints",
+                        "Value": 1
+                    },
+                    {
+                        "Name": "Xp cost 2",
+                        "Description": "Pas assez de points d'expérience disponibles",
+                        "Type": "Cost",
+                        "CostType": "competence",
+                        "Value": 2
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Name":"Habiletés magiques",
+        "Type": "Group",
+        "Rules": [],
+        "Items": [
+            {
+                "Name": "Concentration",
+                "Type": "Skill",
+                "Description": "Ajoute un point de mana/foi maximum supplémentaire par point de compétence utilisé.",
+                "Rules": [
+                    {
+                        "Name": "Max Concentration",
+                        "Description": "Maximum 5 Concentration",
+                        "Type": "MaxPoints",
+                        "Value": 5
+                    },
+                    {
+                        "Name": "Xp cost 1",
+                        "Description": "Pas assez de points d'expérience disponibles",
+                        "Type": "Cost",
+                        "CostType": "competence",
+                        "Value": 1
+                    }
+                ]
+            },
+            {
+                "Name": "Magie starter packs",
+                "Type": "Group",
+                "Rules": [
+                    {
+                        "Name": "Max starter magie",
+                        "Description": "Maximum 1 type de magie",
+                        "Type": "MaxChildren",
+                        "Value": 1
+                    }
+                ],
+                "Items":[
+                    {
+                        "Name": "Manipulation arcane",
+                        "Type": "Skill",
+                        "Description": "Permet de manipuler la magie arcane (voir document Magies)\nDonne 3 points de mana",
+                        "Rules": [
+                            {
+                                "Name": "Xp cost 6",
+                                "Description": "Pas assez de points d'expérience disponibles",
+                                "Type": "Cost",
+                                "CostType": "competence",
+                                "Value": 6
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Manipulation élémentaire",
+                        "Type": "Skill",
+                        "Description": "Permet de manipuler les magies élémentaires (voir document Magies)\nDonne 3 points de mana",
+                        "Rules": [
+                            {
+                                "Name": "Xp cost 6",
+                                "Description": "Pas assez de points d'expérience disponibles",
+                                "Type": "Cost",
+                                "CostType": "competence",
+                                "Value": 6
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Druide",
+                        "Type": "Skill",
+                        "Description": "Permet de manipuler la nature (voir document Magies)\nDonne 3 points de mana",
+                        "Rules": [
+                            {
+                                "Name": "Xp cost 6",
+                                "Description": "Pas assez de points d'expérience disponibles",
+                                "Type": "Cost",
+                                "CostType": "competence",
+                                "Value": 6
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Prêtre",
+                        "Type": "Skill",
+                        "Description": "Permet de faire des prières (voir document Magies)\nDonne 3 points de foi",
+                        "Rules": [
+                            {
+                                "Name": "Xp cost 6",
+                                "Description": "Pas assez de points d'expérience disponibles",
+                                "Type": "Cost",
+                                "CostType": "competence",
+                                "Value": 6
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

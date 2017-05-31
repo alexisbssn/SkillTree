@@ -1,5 +1,6 @@
 import { Rule } from './rule';
 import { Ruleable } from '../ruleable';
+import { Player } from '../player';
 
 export class CostRule extends Rule{
     public Type: string = "Cost";
@@ -8,7 +9,6 @@ export class CostRule extends Rule{
     public Value : number;
 
     public IsValid(subject: Ruleable): boolean{
-        //TODO implement
-        return true;
+        return Player.GetInstance().GetAvailablePoints(this.CostType) >= this.Value;
     }
 }

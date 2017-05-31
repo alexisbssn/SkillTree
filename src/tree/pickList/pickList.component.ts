@@ -17,13 +17,13 @@ export class PickListComponent  {
 
     PickSkills(skills: Skill[]): void{
         for(var skill of skills){
-            skill.AddPoint();
+            skill.Pick();
         }
     }
 
     RemoveSkills(skills: Skill[]): void{
         for(var skill of skills){
-            skill.RemovePoint();
+            skill.UnPick();
         }
     }
 }

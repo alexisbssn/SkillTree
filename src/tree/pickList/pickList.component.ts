@@ -1,29 +1,22 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ViewEncapsulation } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
 import { LeafComponent } from '../leaf/leaf.component';
-import { PickListModule } from 'primeng/primeng';
+import { Carousel } from 'primeng/primeng';
 import { Skill } from '../../model/skill';
 
 @Component({
     moduleId: module.id,
     selector: 'tree-pick-list',
-    templateUrl:'./pickList.component.html'
+    templateUrl:'./pickList.component.html',
+    encapsulation: ViewEncapsulation.None, // Necessary to style PrimeNg's Carousel.
+    styleUrls: ['./pickList.component.css']
 })
 export class PickListComponent  {
+
+   constructor(private sanitizer: DomSanitizer) {}
+
     @Input()
     Available: Array<Skill>;
 
-    @Input()
-    Selected: Array<Skill>;
-
-    PickSkills(skills: Skill[]): void{
-        for(var skill of skills){
-            skill.Pick();
-        }
-    }
-
-    RemoveSkills(skills: Skill[]): void{
-        for(var skill of skills){
-            skill.UnPick();
-        }
-    }
+    private myEasing = this.sanitizer.bypassSecurityTrustStyle('cubic-bezier(0.42,0,0.58,1)');
 }

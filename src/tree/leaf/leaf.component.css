@@ -1,0 +1,24 @@
+.disable-button{
+    background-color: #dd4040;
+    background-blend-mode: screen;
+    opacity: 0.55;
+}
+
+.my-button{
+    border: none;
+    margin: 1px;
+    width: 100%;
+}
+
+.skillTaken{
+    background-color: #b7ffc5;
+}
+
+.button-div{
+    margin: 4px;
+    padding-left: 0;
+}
+
+h2{
+    margin: 4px;
+}

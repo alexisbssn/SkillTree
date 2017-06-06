@@ -1,7 +1,7 @@
 import { NgModule }      from '@angular/core';
 import { HttpModule }      from '@angular/http';
 import { BrowserModule } from '@angular/platform-browser';
-import { PickListModule } from 'primeng/primeng';
+import { TreeModule, ButtonModule, CarouselModule, PanelModule } from 'primeng/primeng';
 
 import { RootComponent }  from './root.component';
 import { LeafComponent }  from './leaf/leaf.component';
@@ -12,8 +12,11 @@ import { RuleablesDAOService } from './DAL/ruleablesDAO.service'
 @NgModule({
     imports:      [
         BrowserModule,
-        PickListModule,
-        HttpModule
+        TreeModule,
+        HttpModule,
+        CarouselModule,
+        ButtonModule,
+        PanelModule
      ],
     declarations: [
         RootComponent,
@@ -23,4 +26,4 @@ import { RuleablesDAOService } from './DAL/ruleablesDAO.service'
     bootstrap:    [ RootComponent ],
     providers: [ RuleablesDAOService ]
 })
-export class TreeModule { }
+export class SkillTreeModule { }

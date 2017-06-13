@@ -1,7 +1,6 @@
-<h1>Hello {{name}}</h1>
-<!--<tree-leaf [skill]="testSkill1"></tree-leaf>-->
-<button (click)="LogRulebook();">log-me</button>
-<button (click)="AddSkillPoint()">+</button>
-<button (click)="RemoveSkillPoint()">-</button>
-<div>{{GetAvailablePoints()}}</div>
+<!--<button (click)="LogRulebook();">log-me</button>-->
+<button pButton type="button" class="my-button" (click)="AddSkillPoint()" icon="fa-plus-circle"></button>
+<button pButton type="button" class="my-button" (click)="RemoveSkillPoint()" [disabled]="!(GetAvailablePoints() > 0)" [class.disable-button]="!(GetAvailablePoints() > 0)" icon="fa-minus-circle"></button>
+<div>Points de compétence total: {{GetTotalPoints()}}</div>
+<div>Points de compétence restants: {{GetAvailablePoints()}}</div>
 <tree-pick-list [Available]="Skillz"></tree-pick-list>

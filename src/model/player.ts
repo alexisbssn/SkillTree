@@ -32,6 +32,15 @@ export class Player {
         }
     }
 
+    public GetTotalPoints(pointType: string): number{
+        for(let p of this.Points){
+            if(p.Type === pointType){
+                return p.Value;
+            }
+        }
+        return 0;
+    }
+
     public GetAvailablePoints(pointType: string): number{
         let availablePoints: number = 0;
         let spentPoints: number = 0;
@@ -42,12 +51,16 @@ export class Player {
             }
         }
 
-        spentPoints = this.GetSpentPoints(this.SkillBook, pointType);
+        spentPoints = this.GetSpentPoints(pointType);
 
         return availablePoints - spentPoints;
     }
 
-    private GetSpentPoints(ruleables: Array<Ruleable>, pointType: string){
+    public GetSpentPoints(pointType: string): number{
+        return this.GetSpentPointsFromArray(this.SkillBook, pointType);
+    }
+
+    private GetSpentPointsFromArray(ruleables: Array<Ruleable>, pointType: string){
         let spentPoints = 0;
         for(let ruleable of ruleables){
             for(let rle of ruleable.Rules){
@@ -58,7 +71,7 @@ export class Player {
                 }
             }
             if(ruleable.Type === "Group"){
-                spentPoints += this.GetSpentPoints((ruleable as Group).Items, pointType);
+                spentPoints += this.GetSpentPointsFromArray((ruleable as Group).Items, pointType);
             }
         }
         return spentPoints;

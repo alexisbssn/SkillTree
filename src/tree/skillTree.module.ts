@@ -23,7 +23,7 @@ import { RuleablesDAOService } from './DAL/ruleablesDAO.service'
         LeafComponent,
         PickListComponent
     ],
-    bootstrap:    [ RootComponent ],
-    providers: [ RuleablesDAOService ]
+    providers: [ RuleablesDAOService ],
+    exports: [ RootComponent ]
 })
 export class SkillTreeModule { }

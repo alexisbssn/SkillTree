@@ -1,0 +1,20 @@
+.disable-button{
+    background-color: #dd4040 !important;
+    background-blend-mode: screen !important;
+    opacity: 0.55 !important;
+}
+
+.my-button{
+    border: none !important;
+    margin: 2px;
+}
+
+body, .ui-carousel-viewport{
+    background-color: rgb(250, 249, 245) !important;
+}
+
+body{
+    max-width: 1000px;
+    margin-left : auto !important;
+    margin-right : auto !important;
+}

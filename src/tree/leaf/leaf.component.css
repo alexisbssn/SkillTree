@@ -1,12 +1,4 @@
-.disable-button{
-    background-color: #dd4040;
-    background-blend-mode: screen;
-    opacity: 0.55;
-}
-
 .my-button{
-    border: none;
-    margin: 1px;
     width: 100%;
 }
 
@@ -19,6 +11,6 @@
     padding-left: 0;
 }
 
-h2{
+.skillNameContainer{
     margin: 4px;
 }

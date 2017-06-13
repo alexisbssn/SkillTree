@@ -1,16 +1,16 @@
 <div [class.skillTaken]="skill.PointsIn() > 0">
     <div class="row">
-        <div class="col-md-9">
-            <h2>{{skill.Name}}</h2>
+        <div class="col-md-9 col-xs-6 skillNameContainer">
+            <h3>{{skill.Name}}</h3>
             <div [hidden]="IsMaxOnePoint()">Points: {{skill.PointsIn()}}</div>
         </div>
-        <div class="pull-right col-md-2 button-div">
+        <div class="pull-right col-md-2 col-xs-5 button-div">
             <button pButton type="button" class="my-button" [disabled]="!skill.isValid()"         [class.disable-button]="!skill.isValid()"       (click)="skill.Pick()"      icon="fa-plus-circle"></button>
             <button pButton type="button" class="my-button" [disabled]="skill.PointsIn() == 0"    [class.disable-button]="skill.PointsIn() == 0"  (click)="skill.UnPick()"    icon="fa-minus-circle"></button>
         </div>
     </div>
     <div class="row">
-        <p-panel [collapsed]="true" [toggleable]=true class="col-md-12">
+        <p-panel [collapsed]="true" [toggleable]=true class="col-xs-12">
             <div>{{skill.Description}}</div>
         </p-panel>
     </div>

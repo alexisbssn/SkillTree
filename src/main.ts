@@ -1,5 +1,5 @@
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
-import { SkillTreeModule } from './tree/skillTree.module';
+import { WebModule } from './web/web.module';
 
-platformBrowserDynamic().bootstrapModule(SkillTreeModule);
+platformBrowserDynamic().bootstrapModule(WebModule);

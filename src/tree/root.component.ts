@@ -12,13 +12,9 @@ import { RuleablesDAOService } from './DAL/ruleablesDAO.service'
     providers: [ RuleablesDAOService ]
 })
 export class RootComponent  {
-    name = 'Angular';
     Skillz:Array<Skill>;
-    SelectedSkillz: Array<Skill>;
-    _entangle: Skill;
 
     constructor(private dataSource : RuleablesDAOService){
-        this.SelectedSkillz = new Array<Skill>();
         this.Skillz = new Array<Skill>();
         dataSource.GetData('../SentiersDeLOubli.json').subscribe(ruleable => {
             Player.GetInstance().SkillBook.push(ruleable);
@@ -41,6 +37,10 @@ export class RootComponent  {
 
     private GetAvailablePoints(){
         return Player.GetInstance().GetAvailablePoints("competence");
+    }
+
+    private GetTotalPoints(){
+        return Player.GetInstance().GetTotalPoints("competence");
     }
 
     private AddSkillPoint(type: string){

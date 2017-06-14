@@ -1,6 +1,7 @@
 import { Ruleable } from './ruleable';
 import { CostRule } from './rules/CostRule';
 import { Group } from './group';
+import { Skill } from './skill';
 
 export class Player {
 
@@ -15,6 +16,37 @@ export class Player {
 
     public Points: Array<PointsContainer>;
     public SkillBook: Array<Ruleable>;
+
+    public GetTakenSkills(): Array<Skill>{
+        let skills = new Array<Skill>();
+        for(let skill of this.GetFlatSkillBook()){
+            if(skill.Type == "Skill" && skill.UniqueIn() === 1){
+                skills.push(skill as Skill);
+            }
+        }
+        return skills;
+    }
+
+    GetFlatSkillBook(): Array<Skill>{
+        let skills = new Array<Skill>();
+        for(let r of this.SkillBook){
+            skills = skills.concat(this.FlattenSkillBook(r));
+        }
+        return skills
+    }
+
+    private FlattenSkillBook(ruleable: Ruleable): Array<Skill>{
+        let skills = new Array<Skill>();
+        if(ruleable.Type === "Group"){
+            for(let r of (<Group>ruleable).Items){
+                skills = skills.concat(this.FlattenSkillBook(r));
+            }
+        }
+        else{
+            skills.push(<Skill>ruleable);
+        }
+        return skills;
+    }
 
     public AddSkillPoints(type: string, value: number){
         let found = false;

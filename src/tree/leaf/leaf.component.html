@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-md-9 col-xs-6 skillNameContainer">
             <h3>{{skill.Name}}</h3>
-            <div [hidden]="IsMaxOnePoint()">Points: {{skill.PointsIn()}}</div>
+            <div [hidden]="skill.IsMaxOnePoint()">Points: {{skill.PointsIn()}}</div>
         </div>
         <div class="pull-right col-md-2 col-xs-5 button-div">
             <button pButton type="button" class="my-button" [disabled]="!skill.isValid()"         [class.disable-button]="!skill.isValid()"       (click)="skill.Pick()"      icon="fa-plus-circle"></button>

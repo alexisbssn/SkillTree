@@ -1,5 +1,6 @@
 import { Ruleable } from './ruleable';
 import { Rule } from './rules/rule';
+import { MaxPointsRule } from "./rules/MaxPointsRule";
 
 export class Skill extends Ruleable{
     public Description: string;
@@ -16,5 +17,17 @@ export class Skill extends Ruleable{
     public constructor(){
         super();
         this._pointsIn = 0;
+    }
+
+    public IsMaxOnePoint() : boolean{
+        for(let rule of this.Rules){
+            if(rule.Type === "MaxPoints"){
+                if((rule as MaxPointsRule).Value == 1){
+                    return true;
+                }
+                return false;
+            }
+        }
+        return false;
     }
 }

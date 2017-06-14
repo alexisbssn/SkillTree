@@ -6,6 +6,7 @@ import { TreeModule, ButtonModule, CarouselModule, PanelModule } from 'primeng/p
 import { RootComponent }  from './root.component';
 import { LeafComponent }  from './leaf/leaf.component';
 import { PickListComponent }  from './pickList/pickList.component';
+import { SkillListComponent } from './skill-list/skill-list.component'
 
 import { RuleablesDAOService } from './DAL/ruleablesDAO.service'
 
@@ -21,7 +22,8 @@ import { RuleablesDAOService } from './DAL/ruleablesDAO.service'
     declarations: [
         RootComponent,
         LeafComponent,
-        PickListComponent
+        PickListComponent,
+        SkillListComponent
     ],
     providers: [ RuleablesDAOService ],
     exports: [ RootComponent ]

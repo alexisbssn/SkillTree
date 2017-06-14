@@ -1,0 +1,6 @@
+<ul>
+    <li *ngFor="let skill of Skills">
+        <span>{{skill.Name}}</span>
+        <span [hidden]="skill.IsMaxOnePoint()"> : {{skill.PointsIn()}}</span>
+    </li>
+</ul>

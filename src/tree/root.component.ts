@@ -18,21 +18,8 @@ export class RootComponent  {
         this.Skillz = new Array<Skill>();
         dataSource.GetData('../SentiersDeLOubli.json').subscribe(ruleable => {
             Player.GetInstance().SkillBook.push(ruleable);
-            this.Skillz = this.Skillz.concat(this.FlattenRuleable(ruleable));
+            this.Skillz = this.Skillz.concat(Player.GetInstance().GetFlatSkillBook());
         });
-    }
-
-    private FlattenRuleable(ruleable: Ruleable): Array<Skill>{
-        let skills = new Array<Skill>();
-        if(ruleable.Type === "Group"){
-            for(let r of (<Group>ruleable).Items){
-                skills = skills.concat(this.FlattenRuleable(r));
-            }
-        }
-        else{
-            skills.push(<Skill>ruleable);
-        }
-        return skills;
     }
 
     private GetAvailablePoints(){
@@ -49,6 +36,10 @@ export class RootComponent  {
 
     private RemoveSkillPoint(type: string){
         Player.GetInstance().AddSkillPoints("competence", -1);
+    }
+
+    GetTakenSkills(){
+        return Player.GetInstance().GetTakenSkills();
     }
 
     private LogRulebook(){

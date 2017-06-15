@@ -5,12 +5,14 @@ import { Group } from '../../model/group';
 import { Skill } from '../../model/skill';
 import { Rule } from '../../model/rules/rule';
 import { PointsInRule } from '../../model/rules/PointsInRule';
+import { ChildrenInRule } from '../../model/rules/ChildrenInRule';
 import { MaxPointsRule } from '../../model/rules/MaxPointsRule';
 import { MaxPointsPerRule } from '../../model/rules/MaxPointsPerRule';
 import { MaxChildrenRule } from '../../model/rules/MaxChildrenRule';
 import { MaxChildrenPerRule } from '../../model/rules/MaxChildrenPerRule';
 import { ParentValidRule } from '../../model/rules/ParentValidRule';
 import { CostRule } from '../../model/rules/CostRule';
+import { InverseCostRule } from '../../model/rules/InverseCostRule';
 import { ReplaySubject } from 'rxjs/ReplaySubject';
 import { Subject } from 'rxjs/Subject';
 import { Observer } from 'rxjs/Observer';
@@ -90,6 +92,16 @@ export class RuleablesDAOService {
                 }
             });
             break;
+          case "ChildrenIn":
+            instance = new ChildrenInRule();
+            instance.Operator = this.CheckUndef((<ChildrenInRule>untyped).Operator, ">");
+            instance.Value = this.CheckUndef((<ChildrenInRule>untyped).Value, 0);
+            this._references.subscribe(ref =>{
+                if(ref.id == (<any>untyped).Subject.$ref){
+                    instance.Subject = ref.ruleable;
+                }
+            });
+            break;
           case "MaxPoints":
             instance = new MaxPointsRule();
             instance.Value = this.CheckUndef((<MaxPointsRule>untyped).Value, 1);
@@ -121,6 +133,11 @@ export class RuleablesDAOService {
             instance.Value = this.CheckUndef((<CostRule>untyped).Value, 1);
             instance.CostType = this.CheckUndef((<CostRule>untyped).CostType, 1);
             break;
+          case "InverseCost":
+            instance = new InverseCostRule();
+            instance.Value = this.CheckUndef((<InverseCostRule>untyped).Value, 1);
+            instance.CostType = this.CheckUndef((<InverseCostRule>untyped).CostType, 1);
+            break;
           default:
             console.log("Got invalid rule type: " + untyped.Type);
             return undefined;
@@ -132,7 +149,7 @@ export class RuleablesDAOService {
       }
 
       instance.Name = this.CheckUndef(untyped.Name, "");
-      instance.ErrorMessage = this.CheckUndef(untyped.Name, "");
+      instance.ErrorMessage = this.CheckUndef(untyped.ErrorMessage, "");
 
       return instance;
   }

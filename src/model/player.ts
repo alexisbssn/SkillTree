@@ -2,6 +2,7 @@ import { Ruleable } from './ruleable';
 import { CostRule } from './rules/CostRule';
 import { Group } from './group';
 import { Skill } from './skill';
+import { PointsContainer } from './PointsContainer';
 
 export class Player {
 
@@ -30,16 +31,16 @@ export class Player {
     GetFlatSkillBook(): Array<Skill>{
         let skills = new Array<Skill>();
         for(let r of this.SkillBook){
-            skills = skills.concat(this.FlattenSkillBook(r));
+            skills = skills.concat(this.FlattenRuleable(r));
         }
         return skills
     }
 
-    private FlattenSkillBook(ruleable: Ruleable): Array<Skill>{
+    private FlattenRuleable(ruleable: Ruleable): Array<Skill>{
         let skills = new Array<Skill>();
         if(ruleable.Type === "Group"){
             for(let r of (<Group>ruleable).Items){
-                skills = skills.concat(this.FlattenSkillBook(r));
+                skills = skills.concat(this.FlattenRuleable(r));
             }
         }
         else{
@@ -95,22 +96,18 @@ export class Player {
     private GetSpentPointsFromArray(ruleables: Array<Ruleable>, pointType: string){
         let spentPoints = 0;
         for(let ruleable of ruleables){
-            for(let rle of ruleable.Rules){
+            /*for(let rle of ruleable.Rules){
                 if(rle.Type === "Cost"){
                     if((rle as CostRule).CostType === pointType){
                         spentPoints += (rle as CostRule).Value * ruleable.PointsIn();
                     }
                 }
-            }
+            }*/
+            spentPoints += ruleable.GetSpentPoints(pointType);
             if(ruleable.Type === "Group"){
                 spentPoints += this.GetSpentPointsFromArray((ruleable as Group).Items, pointType);
             }
         }
         return spentPoints;
     }
-}
-
-class PointsContainer{
-    Type: string;
-    Value: number;
 }

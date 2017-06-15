@@ -7,7 +7,7 @@ export class Skill extends Ruleable{
     public Type: string = "Skill";
 
     public UniqueIn(): number{
-        return this._pointsIn > 0 ? 1 : 0;
+        return this.PointsIn() > 0 ? 1 : 0;
     }
 
     public ChildrenIn() : number{
@@ -16,7 +16,6 @@ export class Skill extends Ruleable{
 
     public constructor(){
         super();
-        this._pointsIn = 0;
     }
 
     public IsMaxOnePoint() : boolean{

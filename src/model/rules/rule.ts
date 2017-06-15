@@ -9,7 +9,15 @@ export abstract class Rule{
     // In other words: Rule is always valid if its own rules are invalid
     public Rules : Array<Rule>;
 
-    public abstract IsValid(subject: Ruleable): boolean;
+    public IsValid(subject: Ruleable): boolean{
+        let rule: Rule
+        for(rule of this.Rules){
+            if(!rule.IsValid(subject)){
+                return false;
+            }
+        }
+        return true;
+    }
 
     public constructor(){
         this.Rules = new Array<Rule>();

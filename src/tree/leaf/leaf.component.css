@@ -14,3 +14,7 @@
 .skillNameContainer{
     margin: 4px;
 }
+
+.invalidRuleText{
+    color: red;
+}

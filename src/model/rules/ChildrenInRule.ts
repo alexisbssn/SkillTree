@@ -9,37 +9,41 @@ export class ChildrenInRule extends Rule{
     public Operator: string;
 
     public IsValid(subject: Ruleable): boolean{
+        if(!super.IsValid(subject)){
+            return true;
+        }
         switch(this.Operator){
             case "<":
                 if(this.Subject.ChildrenIn() < this.Value){
-                    return false;
+                    return true;
                 }
                 break;
             case ">":
                 if(this.Subject.ChildrenIn() > this.Value){
-                    return false;
+                    return true;
                 }
                 break;
             case "<=":
                 if(this.Subject.ChildrenIn() <= this.Value){
-                    return false;
+                    return true;
                 }
                 break;
             case ">=":
                 if(this.Subject.ChildrenIn() >= this.Value){
-                    return false;
+                    return true;
                 }
                 break;
             case "=":
                 if(this.Subject.ChildrenIn() === this.Value){
-                    return false;
+                    return true;
                 }
                 break;
             case "!=":
                 if(this.Subject.ChildrenIn() !== this.Value){
-                    return false;
+                    return true;
                 }
                 break;
         }
+        return false;
     }
 }

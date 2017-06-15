@@ -18,7 +18,7 @@ export class RootComponent  {
         this.Skillz = new Array<Skill>();
         dataSource.GetData('../SentiersDeLOubli.json').subscribe(ruleable => {
             Player.GetInstance().SkillBook.push(ruleable);
-            this.Skillz = this.Skillz.concat(Player.GetInstance().GetFlatSkillBook());
+            this.Skillz = Player.GetInstance().GetFlatSkillBook();
         });
     }
 
@@ -28,6 +28,10 @@ export class RootComponent  {
 
     private GetTotalPoints(){
         return Player.GetInstance().GetTotalPoints("competence");
+    }
+
+    private GetAvailableSpellPoints(){
+        return Player.GetInstance().GetAvailablePoints("spell");
     }
 
     private AddSkillPoint(type: string){

@@ -11,13 +11,13 @@
                 "Rules": [
                     {
                         "Name": "Max Résistance",
-                        "Description": "Maximum 3 Résistances",
+                        "ErrorMessage": "Maximum 3 Résistances",
                         "Type": "MaxPoints",
                         "Value": 3
                     },
                     {
                         "Name": "Xp cost 1",
-                        "Description": "Pas assez de points d'expérience disponibles",
+                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
                         "Type": "Cost",
                         "CostType": "competence",
                         "Value": 1
@@ -31,13 +31,13 @@
                 "Rules": [
                     {
                         "Name": "Max Force de rage",
-                        "Description": "Maximum 6 Forces de rage",
+                        "ErrorMessage": "Maximum 6 Forces de rage",
                         "Type": "MaxPoints",
                         "Value": 6
                     },
                     {
                         "Name": "Xp cost 1",
-                        "Description": "Pas assez de points d'expérience disponibles",
+                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
                         "Type": "Cost",
                         "CostType": "competence",
                         "Value": 1
@@ -51,13 +51,13 @@
                 "Rules": [
                     {
                         "Name": "Max Précision",
-                        "Description": "Maximum 4 Précision",
+                        "ErrorMessage": "Maximum 4 Précision",
                         "Type": "MaxPoints",
                         "Value": 4
                     },
                     {
                         "Name": "Xp cost 1",
-                        "Description": "Pas assez de points d'expérience disponibles",
+                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
                         "Type": "Cost",
                         "CostType": "competence",
                         "Value": 1
@@ -71,13 +71,13 @@
                 "Rules": [
                     {
                         "Name": "Max Désarmer",
-                        "Description": "Maximum 1 Désarmer",
+                        "ErrorMessage": "Maximum 1 Désarmer",
                         "Type": "MaxPoints",
                         "Value": 1
                     },
                     {
                         "Name": "Xp cost 2",
-                        "Description": "Pas assez de points d'expérience disponibles",
+                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
                         "Type": "Cost",
                         "CostType": "competence",
                         "Value": 2
@@ -91,13 +91,13 @@
                 "Rules": [
                     {
                         "Name": "Max Pulvériser",
-                        "Description": "Maximum 1 Pulvériser",
+                        "ErrorMessage": "Maximum 1 Pulvériser",
                         "Type": "MaxPoints",
                         "Value": 1
                     },
                     {
                         "Name": "Xp cost 2",
-                        "Description": "Pas assez de points d'expérience disponibles",
+                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
                         "Type": "Cost",
                         "CostType": "competence",
                         "Value": 2
@@ -111,13 +111,13 @@
                 "Rules": [
                     {
                         "Name": "Max Force extrême",
-                        "Description": "Maximum 1 Force extrême",
+                        "ErrorMessage": "Maximum 1 Force extrême",
                         "Type": "MaxPoints",
                         "Value": 1
                     },
                     {
                         "Name": "Xp cost 2",
-                        "Description": "Pas assez de points d'expérience disponibles",
+                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
                         "Type": "Cost",
                         "CostType": "competence",
                         "Value": 2
@@ -131,13 +131,13 @@
                 "Rules": [
                     {
                         "Name": "Max Esquive",
-                        "Description": "Maximum 3 Esquives",
+                        "ErrorMessage": "Maximum 3 Esquives",
                         "Type": "MaxPoints",
                         "Value": 3
                     },
                     {
                         "Name": "Xp cost 1",
-                        "Description": "Pas assez de points d'expérience disponibles",
+                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
                         "Type": "Cost",
                         "CostType": "competence",
                         "Value": 1
@@ -152,13 +152,13 @@
                 "Rules": [
                     {
                         "Name": "Max Sauvegarde magie",
-                        "Description": "Maximum 1 Sauvegarde contre la magie",
+                        "ErrorMessage": "Maximum 1 Sauvegarde contre la magie",
                         "Type": "MaxPoints",
                         "Value": 1
                     },
                     {
                         "Name": "Xp cost 2",
-                        "Description": "Pas assez de points d'expérience disponibles",
+                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
                         "Type": "Cost",
                         "CostType": "competence",
                         "Value": 2
@@ -172,13 +172,13 @@
                 "Rules": [
                     {
                         "Name": "Max Fuite",
-                        "Description": "Maximum 3 Fuites",
+                        "ErrorMessage": "Maximum 3 Fuites",
                         "Type": "MaxPoints",
                         "Value": 3
                     },
                     {
                         "Name": "Xp cost 1",
-                        "Description": "Pas assez de points d'expérience disponibles",
+                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
                         "Type": "Cost",
                         "CostType": "competence",
                         "Value": 1
@@ -192,13 +192,13 @@
                 "Rules": [
                     {
                         "Name": "Max Armure",
-                        "Description": "Maximum 1 Armure",
+                        "ErrorMessage": "Maximum 1 Armure",
                         "Type": "MaxPoints",
                         "Value": 1
                     },
                     {
                         "Name": "Xp cost 2",
-                        "Description": "Pas assez de points d'expérience disponibles",
+                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
                         "Type": "Cost",
                         "CostType": "competence",
                         "Value": 2
@@ -219,13 +219,13 @@
                 "Rules": [
                     {
                         "Name": "Max Déguisement",
-                        "Description": "Maximum 1 Déguisement",
+                        "ErrorMessage": "Maximum 1 Déguisement",
                         "Type": "MaxPoints",
                         "Value": 1
                     },
                     {
                         "Name": "Xp cost 1",
-                        "Description": "Pas assez de points d'expérience disponibles",
+                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
                         "Type": "Cost",
                         "CostType": "competence",
                         "Value": 1
@@ -239,13 +239,13 @@
                 "Rules": [
                     {
                         "Name": "Max Expert en falsification",
-                        "Description": "Maximum 2 niveaux: Expert en falsification",
+                        "ErrorMessage": "Maximum 2 niveaux: Expert en falsification",
                         "Type": "MaxPoints",
                         "Value": 2
                     },
                     {
                         "Name": "Xp cost 1",
-                        "Description": "Pas assez de points d'expérience disponibles",
+                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
                         "Type": "Cost",
                         "CostType": "competence",
                         "Value": 1
@@ -259,13 +259,13 @@
                 "Rules": [
                     {
                         "Name": "Max Crochetage",
-                        "Description": "Maximum 1 Crochetage",
+                        "ErrorMessage": "Maximum 1 Crochetage",
                         "Type": "MaxPoints",
                         "Value": 1
                     },
                     {
                         "Name": "Xp cost 1",
-                        "Description": "Pas assez de points d'expérience disponibles",
+                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
                         "Type": "Cost",
                         "CostType": "competence",
                         "Value": 1
@@ -279,13 +279,13 @@
                 "Rules": [
                     {
                         "Name": "Max Vol à la tire",
-                        "Description": "Maximum 1 Vol à la tire",
+                        "ErrorMessage": "Maximum 1 Vol à la tire",
                         "Type": "MaxPoints",
                         "Value": 1
                     },
                     {
                         "Name": "Xp cost 2",
-                        "Description": "Pas assez de points d'expérience disponibles",
+                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
                         "Type": "Cost",
                         "CostType": "competence",
                         "Value": 2
@@ -299,13 +299,13 @@
                 "Rules": [
                     {
                         "Name": "Max piege",
-                        "Description": "Maximum 3 niveaux: Poser des pièges",
+                        "ErrorMessage": "Maximum 3 niveaux: Poser des pièges",
                         "Type": "MaxPoints",
                         "Value": 3
                     },
                     {
                         "Name": "Xp cost 1",
-                        "Description": "Pas assez de points d'expérience disponibles",
+                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
                         "Type": "Cost",
                         "CostType": "competence",
                         "Value": 1
@@ -319,13 +319,13 @@
                 "Rules": [
                     {
                         "Name": "Max Camouflage",
-                        "Description": "Maximum 1 Camouflage",
+                        "ErrorMessage": "Maximum 1 Camouflage",
                         "Type": "MaxPoints",
                         "Value": 1
                     },
                     {
                         "Name": "Xp cost 1",
-                        "Description": "Pas assez de points d'expérience disponibles",
+                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
                         "Type": "Cost",
                         "CostType": "competence",
                         "Value": 1
@@ -339,13 +339,13 @@
                 "Rules": [
                     {
                         "Name": "Max Attaque furtive",
-                        "Description": "Maximum 3 niveaux: Attaque furtive",
+                        "ErrorMessage": "Maximum 3 niveaux: Attaque furtive",
                         "Type": "MaxPoints",
                         "Value": 3
                     },
                     {
                         "Name": "Xp cost 2",
-                        "Description": "Pas assez de points d'expérience disponibles",
+                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
                         "Type": "Cost",
                         "CostType": "competence",
                         "Value": 2
@@ -366,13 +366,13 @@
                 "Rules": [
                     {
                         "Name": "Max fab potions",
-                        "Description": "Maximum 1 Fabrication de potions",
+                        "ErrorMessage": "Maximum 1 Fabrication de potions",
                         "Type": "MaxPoints",
                         "Value": 1
                     },
                     {
                         "Name": "Xp cost 2",
-                        "Description": "Pas assez de points d'expérience disponibles",
+                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
                         "Type": "Cost",
                         "CostType": "competence",
                         "Value": 2
@@ -386,13 +386,13 @@
                 "Rules": [
                     {
                         "Name": "Max fab poisons",
-                        "Description": "Maximum 1 Fabrication de poisons",
+                        "ErrorMessage": "Maximum 1 Fabrication de poisons",
                         "Type": "MaxPoints",
                         "Value": 1
                     },
                     {
                         "Name": "Xp cost 2",
-                        "Description": "Pas assez de points d'expérience disponibles",
+                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
                         "Type": "Cost",
                         "CostType": "competence",
                         "Value": 2
@@ -406,13 +406,13 @@
                 "Rules": [
                     {
                         "Name": "Max application poisons",
-                        "Description": "Maximum 1 Application de poisons",
+                        "ErrorMessage": "Maximum 1 Application de poisons",
                         "Type": "MaxPoints",
                         "Value": 1
                     },
                     {
                         "Name": "Xp cost 1",
-                        "Description": "Pas assez de points d'expérience disponibles",
+                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
                         "Type": "Cost",
                         "CostType": "competence",
                         "Value": 1
@@ -426,13 +426,13 @@
                 "Rules": [
                     {
                         "Name": "Max Écriture de parchemins",
-                        "Description": "Maximum 1 Écriture de parchemins",
+                        "ErrorMessage": "Maximum 1 Écriture de parchemins",
                         "Type": "MaxPoints",
                         "Value": 1
                     },
                     {
                         "Name": "Xp cost 1",
-                        "Description": "Pas assez de points d'expérience disponibles",
+                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
                         "Type": "Cost",
                         "CostType": "competence",
                         "Value": 1
@@ -453,13 +453,13 @@
                 "Rules": [
                     {
                         "Name": "Max Lire et écrire",
-                        "Description": "Maximum 1 Lire et écrire",
+                        "ErrorMessage": "Maximum 1 Lire et écrire",
                         "Type": "MaxPoints",
                         "Value": 1
                     },
                     {
                         "Name": "Xp cost 1",
-                        "Description": "Pas assez de points d'expérience disponibles",
+                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
                         "Type": "Cost",
                         "CostType": "competence",
                         "Value": 1
@@ -473,7 +473,7 @@
                 "Rules": [
                     {
                         "Name": "Xp cost 1",
-                        "Description": "Pas assez de points d'expérience disponibles",
+                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
                         "Type": "Cost",
                         "CostType": "competence",
                         "Value": 1
@@ -487,13 +487,13 @@
                 "Rules": [
                     {
                         "Name": "Max Marchandage",
-                        "Description": "Maximum 5 Marchandage",
+                        "ErrorMessage": "Maximum 5 Marchandage",
                         "Type": "MaxPoints",
                         "Value": 5
                     },
                     {
                         "Name": "Xp cost 1",
-                        "Description": "Pas assez de points d'expérience disponibles",
+                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
                         "Type": "Cost",
                         "CostType": "competence",
                         "Value": 1
@@ -507,13 +507,13 @@
                 "Rules": [
                     {
                         "Name": "Max Diplomatie",
-                        "Description": "Maximum 1 Diplomatie",
+                        "ErrorMessage": "Maximum 1 Diplomatie",
                         "Type": "MaxPoints",
                         "Value": 1
                     },
                     {
                         "Name": "Xp cost 2",
-                        "Description": "Pas assez de points d'expérience disponibles",
+                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
                         "Type": "Cost",
                         "CostType": "competence",
                         "Value": 2
@@ -527,13 +527,13 @@
                 "Rules": [
                     {
                         "Name": "Max Mensonge",
-                        "Description": "Maximum 1 Mensonge",
+                        "ErrorMessage": "Maximum 1 Mensonge",
                         "Type": "MaxPoints",
                         "Value": 1
                     },
                     {
                         "Name": "Xp cost 1",
-                        "Description": "Pas assez de points d'expérience disponibles",
+                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
                         "Type": "Cost",
                         "CostType": "competence",
                         "Value": 1
@@ -547,13 +547,13 @@
                 "Rules": [
                     {
                         "Name": "Max Discours",
-                        "Description": "Maximum 1 Discours",
+                        "ErrorMessage": "Maximum 1 Discours",
                         "Type": "MaxPoints",
                         "Value": 1
                     },
                     {
                         "Name": "Xp cost 2",
-                        "Description": "Pas assez de points d'expérience disponibles",
+                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
                         "Type": "Cost",
                         "CostType": "competence",
                         "Value": 2
@@ -567,13 +567,13 @@
                 "Rules": [
                     {
                         "Name": "Max Baratin",
-                        "Description": "Maximum 1 Baratin",
+                        "ErrorMessage": "Maximum 1 Baratin",
                         "Type": "MaxPoints",
                         "Value": 1
                     },
                     {
                         "Name": "Xp cost 2",
-                        "Description": "Pas assez de points d'expérience disponibles",
+                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
                         "Type": "Cost",
                         "CostType": "competence",
                         "Value": 2
@@ -594,13 +594,13 @@
                 "Rules": [
                     {
                         "Name": "Max Concentration",
-                        "Description": "Maximum 5 Concentration",
+                        "ErrorMessage": "Maximum 5 Concentration",
                         "Type": "MaxPoints",
                         "Value": 5
                     },
                     {
                         "Name": "Xp cost 1",
-                        "Description": "Pas assez de points d'expérience disponibles",
+                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
                         "Type": "Cost",
                         "CostType": "competence",
                         "Value": 1
@@ -613,65 +613,796 @@
                 "Rules": [
                     {
                         "Name": "Max starter magie",
-                        "Description": "Maximum 1 type de magie",
+                        "ErrorMessage": "Maximum 1 type de magie",
                         "Type": "MaxChildren",
                         "Value": 1
                     }
                 ],
                 "Items":[
                     {
+                        "id": "#MageCommun",
                         "Name": "Manipulation arcane",
                         "Type": "Skill",
                         "Description": "Permet de manipuler la magie arcane (voir document Magies)\nDonne 3 points de mana",
                         "Rules": [
                             {
                                 "Name": "Xp cost 6",
-                                "Description": "Pas assez de points d'expérience disponibles",
+                                "ErrorMessage": "Pas assez de points d'expérience disponibles",
                                 "Type": "Cost",
                                 "CostType": "competence",
                                 "Value": 6
+                            },
+                            {
+                                "Name": "starter spells",
+                                "ErrorMessage": "Permet de choisir 3 sorts de base",
+                                "Type": "Cost",
+                                "CostType": "spell",
+                                "Value": -3
                             }
                         ]
                     },
                     {
+                        "id": "#MageElementaire",
                         "Name": "Manipulation élémentaire",
                         "Type": "Skill",
                         "Description": "Permet de manipuler les magies élémentaires (voir document Magies)\nDonne 3 points de mana",
                         "Rules": [
                             {
                                 "Name": "Xp cost 6",
-                                "Description": "Pas assez de points d'expérience disponibles",
+                                "ErrorMessage": "Pas assez de points d'expérience disponibles",
                                 "Type": "Cost",
                                 "CostType": "competence",
                                 "Value": 6
+                            },
+                            {
+                                "Name": "starter spells",
+                                "ErrorMessage": "Permet de choisir 3 sorts de base",
+                                "Type": "Cost",
+                                "CostType": "spell",
+                                "Value": -3
                             }
                         ]
                     },
                     {
+                        "id": "#MageDruide",
                         "Name": "Druide",
                         "Type": "Skill",
                         "Description": "Permet de manipuler la nature (voir document Magies)\nDonne 3 points de mana",
                         "Rules": [
                             {
                                 "Name": "Xp cost 6",
-                                "Description": "Pas assez de points d'expérience disponibles",
+                                "ErrorMessage": "Pas assez de points d'expérience disponibles",
                                 "Type": "Cost",
                                 "CostType": "competence",
                                 "Value": 6
+                            },
+                            {
+                                "Name": "starter spells",
+                                "ErrorMessage": "Permet de choisir 3 sorts de base",
+                                "Type": "Cost",
+                                "CostType": "spell",
+                                "Value": -3
                             }
                         ]
                     },
                     {
+                        "id": "#MagePretre",
                         "Name": "Prêtre",
                         "Type": "Skill",
                         "Description": "Permet de faire des prières (voir document Magies)\nDonne 3 points de foi",
                         "Rules": [
                             {
                                 "Name": "Xp cost 6",
-                                "Description": "Pas assez de points d'expérience disponibles",
+                                "ErrorMessage": "Pas assez de points d'expérience disponibles",
                                 "Type": "Cost",
                                 "CostType": "competence",
                                 "Value": 6
+                            },
+                            {
+                                "Name": "starter spells",
+                                "ErrorMessage": "Permet de choisir 2 prières de base",
+                                "Type": "Cost",
+                                "CostType": "spell",
+                                "Value": -2
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Name":"Sorts Communs",
+                "Type": "Group",
+                "Rules": [
+                    {
+                        "Name": "Has 1 Point",
+                        "ErrorMessage": "Doit avoir la compétence Magie élémentaire",
+                        "Type": "PointsIn",
+                        "Operator": "=",
+                        "Value": 1,
+                        "Subject": { "$ref": "#MageCommun" }
+                    }
+                ],
+                "Items": [
+                    {
+                        "id": "#MageCommunLvl1",
+                        "Name":"Niveau 1",
+                        "Type": "Group",
+                        "Rules": [],
+                        "Items": [
+                            {
+                                "Name": "Détection de la magie",
+                                "Type": "Skill",
+                                "Description": "Le mage peut apercevoir ce qui est magique mais ne peut déterminer ce que c’est.",
+                                "Rules": [
+                                    {
+                                        "Name": "Max one",
+                                        "ErrorMessage": "Maximum 1",
+                                        "Type": "MaxPoints",
+                                        "Value": 1
+                                    },
+                                    {
+                                        "Name": "Xp cost 1",
+                                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
+                                        "Type": "Cost",
+                                        "CostType": "competence",
+                                        "Value": 1,
+                                        "Rules": [
+                                            {
+                                                "Name": "spell inverse cost 1",
+                                                "ErrorMessage": "Xp cost of 1, only if cannot take from spell points",
+                                                "Type": "InverseCost",
+                                                "CostType": "spell",
+                                                "Value": 1
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "Name": "Spell cost 1",
+                                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
+                                        "Type": "Cost",
+                                        "CostType": "spell",
+                                        "Value": 1,
+                                        "Rules": [
+                                            {
+                                                "Name": "spell cost 1",
+                                                "ErrorMessage": "spell-point cost of 1, only if can take from spell points",
+                                                "Type": "Cost",
+                                                "CostType": "spell",
+                                                "Value": 1
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "Name": "Missile arcane",
+                                "Type": "Skill",
+                                "Description": "Au pointer, 1 point de dégât à la cible désignée",
+                                "Rules": [
+                                    {
+                                        "Name": "Max one",
+                                        "ErrorMessage": "Maximum 1",
+                                        "Type": "MaxPoints",
+                                        "Value": 1
+                                    },
+                                    {
+                                        "Name": "Xp cost 1",
+                                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
+                                        "Type": "Cost",
+                                        "CostType": "competence",
+                                        "Value": 1,
+                                        "Rules": [
+                                            {
+                                                "Name": "spell inverse cost 1",
+                                                "ErrorMessage": "Xp cost of 1, only if cannot take from spell points",
+                                                "Type": "InverseCost",
+                                                "CostType": "spell",
+                                                "Value": 1
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "Name": "Spell cost 1",
+                                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
+                                        "Type": "Cost",
+                                        "CostType": "spell",
+                                        "Value": 1,
+                                        "Rules": [
+                                            {
+                                                "Name": "spell cost 1",
+                                                "ErrorMessage": "spell-point cost of 1, only if can take from spell points",
+                                                "Type": "Cost",
+                                                "CostType": "spell",
+                                                "Value": 1
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "#MageCommunLvl2",
+                        "Name":"Niveau 2",
+                        "Type": "Group",
+                        "Rules": [
+                            {
+                                "Name": "Level",
+                                "ErrorMessage": "Doit avoir au moins un sort de niveau 1",
+                                "Type": "ChildrenIn",
+                                "Operator": ">=",
+                                "Value": 1,
+                                "Subject": { "$ref": "#MageCommunLvl1" }
+                            }
+                        ],
+                        "Items": [
+                            {
+                                "Name": "Or des fous",
+                                "Type": "Skill",
+                                "Description": "Au pointer, 1 point de dégât à la cible désignée",
+                                "Rules": [
+                                    {
+                                        "Name": "Max one",
+                                        "ErrorMessage": "Maximum 1",
+                                        "Type": "MaxPoints",
+                                        "Value": 1
+                                    },
+                                    {
+                                        "Name": "Xp cost 1",
+                                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
+                                        "Type": "Cost",
+                                        "CostType": "competence",
+                                        "Value": 1,
+                                        "Rules": [
+                                            {
+                                                "Name": "spell inverse cost 1",
+                                                "ErrorMessage": "Xp cost of 1, only if cannot take from spell points",
+                                                "Type": "InverseCost",
+                                                "CostType": "spell",
+                                                "Value": 1
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "Name": "Spell cost 1",
+                                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
+                                        "Type": "Cost",
+                                        "CostType": "spell",
+                                        "Value": 1,
+                                        "Rules": [
+                                            {
+                                                "Name": "spell cost 1",
+                                                "ErrorMessage": "spell-point cost of 1, only if can take from spell points",
+                                                "Type": "Cost",
+                                                "CostType": "spell",
+                                                "Value": 1
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "Name": "Protection arcane",
+                                "Type": "Skill",
+                                "Description": "Le mage se protège soi-même des dégâts, il se rajoute un point d'armure pour 15 minutes ou jusqu'à la fin du combat. L'effet n'est pas cumulable.",
+                                "Rules": [
+                                    {
+                                        "Name": "Max one",
+                                        "ErrorMessage": "Maximum 1",
+                                        "Type": "MaxPoints",
+                                        "Value": 1
+                                    },
+                                    {
+                                        "Name": "Xp cost 1",
+                                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
+                                        "Type": "Cost",
+                                        "CostType": "competence",
+                                        "Value": 1,
+                                        "Rules": [
+                                            {
+                                                "Name": "spell inverse cost 1",
+                                                "ErrorMessage": "Xp cost of 1, only if cannot take from spell points",
+                                                "Type": "InverseCost",
+                                                "CostType": "spell",
+                                                "Value": 1
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "Name": "Spell cost 1",
+                                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
+                                        "Type": "Cost",
+                                        "CostType": "spell",
+                                        "Value": 1,
+                                        "Rules": [
+                                            {
+                                                "Name": "spell cost 1",
+                                                "ErrorMessage": "spell-point cost of 1, only if can take from spell points",
+                                                "Type": "Cost",
+                                                "CostType": "spell",
+                                                "Value": 1
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "#MageCommunLvl3",
+                        "Name":"Niveau 3",
+                        "Type": "Group",
+                        "Rules": [
+                            {
+                                "Name": "Level",
+                                "ErrorMessage": "Doit avoir au moins un sort de niveau 2",
+                                "Type": "ChildrenIn",
+                                "Operator": ">=",
+                                "Value": 1,
+                                "Subject": { "$ref": "#MageCommunLvl2" }
+                            }
+                        ],
+                        "Items": [
+                            {
+                                "Name": "Questionner un mort",
+                                "Type": "Skill",
+                                "Description": "Permet au mage qui conjure le sort d'avoir une conversation d'une durée maximale de 2 minutes avec l'âme d'une victime assommée ou morte. La cible répond de la même façon qu'elle l'aurait fait de son vivant et n'est soumise à aucun effet de vérité.",
+                                "Rules": [
+                                    {
+                                        "Name": "Max one",
+                                        "ErrorMessage": "Maximum 1",
+                                        "Type": "MaxPoints",
+                                        "Value": 1
+                                    },
+                                    {
+                                        "Name": "Xp cost 1",
+                                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
+                                        "Type": "Cost",
+                                        "CostType": "competence",
+                                        "Value": 1,
+                                        "Rules": [
+                                            {
+                                                "Name": "spell inverse cost 1",
+                                                "ErrorMessage": "Xp cost of 1, only if cannot take from spell points",
+                                                "Type": "InverseCost",
+                                                "CostType": "spell",
+                                                "Value": 1
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "Name": "Spell cost 1",
+                                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
+                                        "Type": "Cost",
+                                        "CostType": "spell",
+                                        "Value": 1,
+                                        "Rules": [
+                                            {
+                                                "Name": "spell cost 1",
+                                                "ErrorMessage": "spell-point cost of 1, only if can take from spell points",
+                                                "Type": "Cost",
+                                                "CostType": "spell",
+                                                "Value": 1
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "Name": "Explosion arcane",
+                                "Type": "Skill",
+                                "Description": "Tous les joueurs qui entendent le magicien crier le nom du sort reçoivent 1 point de dégâts, sauf le magicien lui-même.",
+                                "Rules": [
+                                    {
+                                        "Name": "Max one",
+                                        "ErrorMessage": "Maximum 1",
+                                        "Type": "MaxPoints",
+                                        "Value": 1
+                                    },
+                                    {
+                                        "Name": "Xp cost 1",
+                                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
+                                        "Type": "Cost",
+                                        "CostType": "competence",
+                                        "Value": 1,
+                                        "Rules": [
+                                            {
+                                                "Name": "spell inverse cost 1",
+                                                "ErrorMessage": "Xp cost of 1, only if cannot take from spell points",
+                                                "Type": "InverseCost",
+                                                "CostType": "spell",
+                                                "Value": 1
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "Name": "Spell cost 1",
+                                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
+                                        "Type": "Cost",
+                                        "CostType": "spell",
+                                        "Value": 1,
+                                        "Rules": [
+                                            {
+                                                "Name": "spell cost 1",
+                                                "ErrorMessage": "spell-point cost of 1, only if can take from spell points",
+                                                "Type": "Cost",
+                                                "CostType": "spell",
+                                                "Value": 1
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "Name": "Bola magique",
+                                "Type": "Skill",
+                                "Description": "La cible trébuche.",
+                                "Rules": [
+                                    {
+                                        "Name": "Max one",
+                                        "ErrorMessage": "Maximum 1",
+                                        "Type": "MaxPoints",
+                                        "Value": 1
+                                    },
+                                    {
+                                        "Name": "Xp cost 1",
+                                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
+                                        "Type": "Cost",
+                                        "CostType": "competence",
+                                        "Value": 1,
+                                        "Rules": [
+                                            {
+                                                "Name": "spell inverse cost 1",
+                                                "ErrorMessage": "Xp cost of 1, only if cannot take from spell points",
+                                                "Type": "InverseCost",
+                                                "CostType": "spell",
+                                                "Value": 1
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "Name": "Spell cost 1",
+                                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
+                                        "Type": "Cost",
+                                        "CostType": "spell",
+                                        "Value": 1,
+                                        "Rules": [
+                                            {
+                                                "Name": "spell cost 1",
+                                                "ErrorMessage": "spell-point cost of 1, only if can take from spell points",
+                                                "Type": "Cost",
+                                                "CostType": "spell",
+                                                "Value": 1
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "Name": "Dispersion de la magie",
+                                "Type": "Skill",
+                                "Description": "Retire les effets d'un sort mineur. (niveau 7 et moins) Ne bloque pas les sorts.",
+                                "Rules": [
+                                    {
+                                        "Name": "Max one",
+                                        "ErrorMessage": "Maximum 1",
+                                        "Type": "MaxPoints",
+                                        "Value": 1
+                                    },
+                                    {
+                                        "Name": "Xp cost 1",
+                                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
+                                        "Type": "Cost",
+                                        "CostType": "competence",
+                                        "Value": 1,
+                                        "Rules": [
+                                            {
+                                                "Name": "spell inverse cost 1",
+                                                "ErrorMessage": "Xp cost of 1, only if cannot take from spell points",
+                                                "Type": "InverseCost",
+                                                "CostType": "spell",
+                                                "Value": 1
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "Name": "Spell cost 1",
+                                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
+                                        "Type": "Cost",
+                                        "CostType": "spell",
+                                        "Value": 1,
+                                        "Rules": [
+                                            {
+                                                "Name": "spell cost 1",
+                                                "ErrorMessage": "spell-point cost of 1, only if can take from spell points",
+                                                "Type": "Cost",
+                                                "CostType": "spell",
+                                                "Value": 1
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Spécialisations Magiques",
+                        "Type": "Group",
+                        "Rules": [
+                            {
+                                "Name": "Max spécialisation magie",
+                                "ErrorMessage": "Maximum 1 spécialisation de magie",
+                                "Type": "MaxChildren",
+                                "Value": 1
+                            }
+                        ],
+                        "Items":[
+                            {
+                                "Name": "Spécialisation Nécromant",
+                                "Type": "Group",
+                                "Rules": [],
+                                "Items":[
+                                    {
+                                        "id": "#MageNecroLvl4",
+                                        "Name":"Niveau 4",
+                                        "Type": "Group",
+                                        "Rules": [
+                                            {
+                                                "Name": "Level",
+                                                "ErrorMessage": "Doit avoir au moins un sort de niveau 3",
+                                                "Type": "ChildrenIn",
+                                                "Operator": ">=",
+                                                "Value": 1,
+                                                "Subject": { "$ref": "#MageCommunLvl3" }
+                                            }
+                                        ],
+                                        "Items": [
+                                            {
+                                                "Name": "Animation squelettique",
+                                                "Type": "Skill",
+                                                "Description": "À partir d'un cadavre de vivant, le nécromancien peut créer un squelette non-intelligent qui se battra selon la volonté du nécromant. Le squelette ne possédera aucune capacité, aura 6 points de vie et aura un dégât de 1 avec l'arme utilisée par le personnage lorsqu'il était vivant. S'il n'avait pas d'arme, le nécromant peut lui en fournir une. Un squelette à la fois. Le squelette se désintègre après 15 minutes.",
+                                                "Rules": [
+                                                    {
+                                                        "Name": "Max one",
+                                                        "ErrorMessage": "Maximum 1",
+                                                        "Type": "MaxPoints",
+                                                        "Value": 1
+                                                    },
+                                                    {
+                                                        "Name": "Xp cost 1",
+                                                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
+                                                        "Type": "Cost",
+                                                        "CostType": "competence",
+                                                        "Value": 1,
+                                                        "Rules": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "#MageNecroLvl5",
+                                        "Name":"Niveau 5",
+                                        "Type": "Group",
+                                        "Rules": [
+                                            {
+                                                "Name": "Level",
+                                                "ErrorMessage": "Doit avoir au moins un sort de niveau 4",
+                                                "Type": "ChildrenIn",
+                                                "Operator": ">=",
+                                                "Value": 1,
+                                                "Subject": { "$ref": "#MageNecroLvl4" }
+                                            }
+                                        ],
+                                        "Items": [
+                                            {
+                                                "Name": "Voile mortel",
+                                                "Type": "Skill",
+                                                "Description": "Au toucher, le nécromant peut infliger 3 points de dégâts à un vivant ou guérir 3 points de vie à un mort-vivant.",
+                                                "Rules": [
+                                                    {
+                                                        "Name": "Max one",
+                                                        "ErrorMessage": "Maximum 1",
+                                                        "Type": "MaxPoints",
+                                                        "Value": 1
+                                                    },
+                                                    {
+                                                        "Name": "Xp cost 1",
+                                                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
+                                                        "Type": "Cost",
+                                                        "CostType": "competence",
+                                                        "Value": 1,
+                                                        "Rules": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "#MageNecroLvl6",
+                                        "Name":"Niveau 6",
+                                        "Type": "Group",
+                                        "Rules": [
+                                            {
+                                                "Name": "Level",
+                                                "ErrorMessage": "Doit avoir au moins un sort de niveau 5",
+                                                "Type": "ChildrenIn",
+                                                "Operator": ">=",
+                                                "Value": 1,
+                                                "Subject": { "$ref": "#MageNecroLvl5" }
+                                            }
+                                        ],
+                                        "Items": [
+                                            {
+                                                "Name": "Intuition des esprits",
+                                                "Type": "Skill",
+                                                "Description": "Habileté passive: à force de traîner avec les morts, le nécromant a appris à les connaître, il peut librement discuter avec ceux-ci et une fois par conversation il peut se servir de l'habileté Diplomatie, qu'il possède la compétence ou non.",
+                                                "Rules": [
+                                                    {
+                                                        "Name": "Max one",
+                                                        "ErrorMessage": "Maximum 1",
+                                                        "Type": "MaxPoints",
+                                                        "Value": 1
+                                                    },
+                                                    {
+                                                        "Name": "Xp cost 1",
+                                                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
+                                                        "Type": "Cost",
+                                                        "CostType": "competence",
+                                                        "Value": 1,
+                                                        "Rules": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "#MageNecroLvl7",
+                                        "Name":"Niveau 7",
+                                        "Type": "Group",
+                                        "Rules": [
+                                            {
+                                                "Name": "Level",
+                                                "ErrorMessage": "Doit avoir au moins un sort de niveau 6",
+                                                "Type": "ChildrenIn",
+                                                "Operator": ">=",
+                                                "Value": 1,
+                                                "Subject": { "$ref": "#MageNecroLvl6" }
+                                            }
+                                        ],
+                                        "Items": [
+                                            {
+                                                "Name": "Lève-toi mon enfant!",
+                                                "Type": "Skill",
+                                                "Description": "À partir d'un cadavre de vivant, le nécromancien peut créer un revenant intelligent qui possèdera toutes les capacités qu'il avait de son vivant. Celui-ci agira selon la volonté de son créateur. Un revenant à la fois. Après 15 minutes, le revenant peut choisir d'aller au cimetière ou de continuer à être un revenant pour un autre 15 minutes, et ainsi de suite.",
+                                                "Rules": [
+                                                    {
+                                                        "Name": "Max one",
+                                                        "ErrorMessage": "Maximum 1",
+                                                        "Type": "MaxPoints",
+                                                        "Value": 1
+                                                    },
+                                                    {
+                                                        "Name": "Xp cost 2",
+                                                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
+                                                        "Type": "Cost",
+                                                        "CostType": "competence",
+                                                        "Value": 2,
+                                                        "Rules": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Name":"Sorts Élémentaires",
+                "Type": "Group",
+                "Rules": [
+                    {
+                        "Name": "Has 1 Point",
+                        "ErrorMessage": "lorsque 1 point",
+                        "Type": "PointsIn",
+                        "Operator": "=",
+                        "Value": 1,
+                        "Subject": { "$ref": "#MageElementaire" }
+                    }
+                ],
+                "Items": [
+                    {
+                        "Name": "Concentration",
+                        "Type": "Skill",
+                        "Description": "Ajoute un point de mana/foi maximum supplémentaire par point de compétence utilisé.",
+                        "Rules": [
+                            {
+                                "Name": "Max one",
+                                "ErrorMessage": "Maximum 1",
+                                "Type": "MaxPoints",
+                                "Value": 1
+                            },
+                            {
+                                "Name": "Xp cost 1",
+                                "ErrorMessage": "Pas assez de points d'expérience disponibles",
+                                "Type": "Cost",
+                                "CostType": "competence",
+                                "Value": 1
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Name":"Sorts Druidiques",
+                "Type": "Group",
+                "Rules": [
+                    {
+                        "Name": "Has 1 Point",
+                        "ErrorMessage": "lorsque 1 point",
+                        "Type": "PointsIn",
+                        "Operator": "=",
+                        "Value": 1,
+                        "Subject": { "$ref": "#MageDruide" }
+                    }
+                ],
+                "Items": [
+                    {
+                        "Name": "Concentration",
+                        "Type": "Skill",
+                        "Description": "Ajoute un point de mana/foi maximum supplémentaire par point de compétence utilisé.",
+                        "Rules": [
+                            {
+                                "Name": "Max one",
+                                "ErrorMessage": "Maximum 1",
+                                "Type": "MaxPoints",
+                                "Value": 1
+                            },
+                            {
+                                "Name": "Xp cost 1",
+                                "ErrorMessage": "Pas assez de points d'expérience disponibles",
+                                "Type": "Cost",
+                                "CostType": "competence",
+                                "Value": 1
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Name":"Prières et Miracles",
+                "Type": "Group",
+                "Rules": [
+                    {
+                        "Name": "Has 1 Point",
+                        "ErrorMessage": "lorsque 1 point",
+                        "Type": "PointsIn",
+                        "Operator": "=",
+                        "Value": 1,
+                        "Subject": { "$ref": "#MagePretre" }
+                    }
+                ],
+                "Items": [
+                    {
+                        "Name": "Concentration",
+                        "Type": "Skill",
+                        "Description": "Ajoute un point de mana/foi maximum supplémentaire par point de compétence utilisé.",
+                        "Rules": [
+                            {
+                                "Name": "Max one",
+                                "ErrorMessage": "Maximum 1",
+                                "Type": "MaxPoints",
+                                "Value": 1
+                            },
+                            {
+                                "Name": "Xp cost 1",
+                                "ErrorMessage": "Pas assez de points d'expérience disponibles",
+                                "Type": "Cost",
+                                "CostType": "competence",
+                                "Value": 1
                             }
                         ]
                     }

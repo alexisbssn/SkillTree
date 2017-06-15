@@ -7,6 +7,9 @@ export class MaxPointsRule extends Rule{
     public Value : number;
 
     public IsValid(subject: Ruleable): boolean{
+        if(!super.IsValid(subject)){
+            return true;
+        }
         return subject.PointsIn() < this.Value;
     }
 }

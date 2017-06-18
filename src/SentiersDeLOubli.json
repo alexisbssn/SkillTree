@@ -1295,6 +1295,366 @@
                                         ]
                                     }
                                 ]
+                            },
+                            {
+                                "Name": "Spécialisation Arcaniste",
+                                "Type": "Group",
+                                "Rules": [],
+                                "Items":[
+                                    {
+                                        "id": "#MageArcaneLvl4",
+                                        "Name":"Niveau 4",
+                                        "Type": "Group",
+                                        "Rules": [
+                                            {
+                                                "Name": "Level",
+                                                "ErrorMessage": "Doit avoir au moins un sort de niveau 3",
+                                                "Type": "ChildrenIn",
+                                                "Operator": ">=",
+                                                "Value": 1,
+                                                "Subject": { "$ref": "#MageCommunLvl3" }
+                                            }
+                                        ],
+                                        "Items": [
+                                            {
+                                                "Name": "Bouclier magique",
+                                                "Type": "Skill",
+                                                "Description": "Le mage conjurant ce sort annulera complètement les effets du prochain sortilège sur lui-même.",
+                                                "Rules": [
+                                                    {
+                                                        "Name": "Max one",
+                                                        "ErrorMessage": "Maximum 1",
+                                                        "Type": "MaxPoints",
+                                                        "Value": 1
+                                                    },
+                                                    {
+                                                        "Name": "Xp cost 1",
+                                                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
+                                                        "Type": "Cost",
+                                                        "CostType": "competence",
+                                                        "Value": 1,
+                                                        "Rules": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "Name": "Enchantement des coffres",
+                                                "Type": "Skill",
+                                                "Description": "L'arcaniste protège le coffre avec un sceau magique, seulement l'arcaniste pourra désormais ouvrir le coffre. Le sceau a une durée infinie, sauf si une dispersion de la magie est utilisée sur le sceau. Enchantement des coffres peut être utilisé avec une cible quelconque, ce faire lui donnera accès au coffre en question à la place de l'arcaniste.",
+                                                "Rules": [
+                                                    {
+                                                        "Name": "Max one",
+                                                        "ErrorMessage": "Maximum 1",
+                                                        "Type": "MaxPoints",
+                                                        "Value": 1
+                                                    },
+                                                    {
+                                                        "Name": "Xp cost 1",
+                                                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
+                                                        "Type": "Cost",
+                                                        "CostType": "competence",
+                                                        "Value": 1,
+                                                        "Rules": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "#MageArcaneLvl5",
+                                        "Name":"Niveau 5",
+                                        "Type": "Group",
+                                        "Rules": [
+                                            {
+                                                "Name": "Level",
+                                                "ErrorMessage": "Doit avoir au moins un sort de niveau 4",
+                                                "Type": "ChildrenIn",
+                                                "Operator": ">=",
+                                                "Value": 1,
+                                                "Subject": { "$ref": "#MageArcaneLvl4" }
+                                            }
+                                        ],
+                                        "Items": [
+                                            {
+                                                "Name": "Copie arcane",
+                                                "Type": "Skill",
+                                                "Description": "Permet à l'arcaniste de recopier l'effet d'un sort de niveau 7 ou moins dont il a entendu l'incantation dans les 5 dernières minutes. Il ne pourra pas copier le même sort deux fois de suite. Il ne faut pas dire l'incantation du sort copié mais il faut dire son nom et son effet.",
+                                                "Rules": [
+                                                    {
+                                                        "Name": "Max one",
+                                                        "ErrorMessage": "Maximum 1",
+                                                        "Type": "MaxPoints",
+                                                        "Value": 1
+                                                    },
+                                                    {
+                                                        "Name": "Xp cost 1",
+                                                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
+                                                        "Type": "Cost",
+                                                        "CostType": "competence",
+                                                        "Value": 1,
+                                                        "Rules": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "Name": "Lame arcane",
+                                                "Type": "Skill",
+                                                "Description": "L’arcaniste infuse la lame de son choix d’énergie arcane et le prochain coup donné par cette arme bénéficiera d’un bonus de dégâts de 2. L’effet se dissipe après 15 minutes si aucun coup n’est donné.",
+                                                "Rules": [
+                                                    {
+                                                        "Name": "Max one",
+                                                        "ErrorMessage": "Maximum 1",
+                                                        "Type": "MaxPoints",
+                                                        "Value": 1
+                                                    },
+                                                    {
+                                                        "Name": "Xp cost 1",
+                                                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
+                                                        "Type": "Cost",
+                                                        "CostType": "competence",
+                                                        "Value": 1,
+                                                        "Rules": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "#MageArcaneLvl6",
+                                        "Name":"Niveau 6",
+                                        "Type": "Group",
+                                        "Rules": [
+                                            {
+                                                "Name": "Level",
+                                                "ErrorMessage": "Doit avoir au moins un sort de niveau 5",
+                                                "Type": "ChildrenIn",
+                                                "Operator": ">=",
+                                                "Value": 1,
+                                                "Subject": { "$ref": "#MageArcaneLvl5" }
+                                            }
+                                        ],
+                                        "Items": [
+                                            {
+                                                "Name": "Implantation de souvenirs",
+                                                "Type": "Skill",
+                                                "Description": "L’arcaniste qui utilise ce sort devra par la suite discuter avec sa victime durant 2 minutes ou plus sans interruption. À n'importe quel moment après le 2 minutes, l'arcaniste peut arrêter la conversation sur un sujet. Il peut alors énoncer une phrase simple qui sera le souvenir qui sera implanté, suivi de « Implantation de souvenirs ». Le souvenir est maintenant partie intégrante de la mémoire de la cible.",
+                                                "Rules": [
+                                                    {
+                                                        "Name": "Max one",
+                                                        "ErrorMessage": "Maximum 1",
+                                                        "Type": "MaxPoints",
+                                                        "Value": 1
+                                                    },
+                                                    {
+                                                        "Name": "Xp cost 1",
+                                                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
+                                                        "Type": "Cost",
+                                                        "CostType": "competence",
+                                                        "Value": 1,
+                                                        "Rules": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "#MageArcaneLvl7",
+                                        "Name":"Niveau 7",
+                                        "Type": "Group",
+                                        "Rules": [
+                                            {
+                                                "Name": "Level",
+                                                "ErrorMessage": "Doit avoir au moins un sort de niveau 6",
+                                                "Type": "ChildrenIn",
+                                                "Operator": ">=",
+                                                "Value": 1,
+                                                "Subject": { "$ref": "#MageArcaneLvl6" }
+                                            }
+                                        ],
+                                        "Items": [
+                                            {
+                                                "Name": "Effigie",
+                                                "Type": "Skill",
+                                                "Description": "Une fois par jour, l'arcaniste peut créer une effigie enchantée. Lorsque l'arcaniste tombe inconscient, il retourne à son effigie hors-jeu, et il réapparaîtra instantanément à cet endroit avec ses pleines capacités. L'effigie est alors détruite. L'effigie n'est pas destructible à part lors de son utilisation. L'effigie doit avoir une représentation physique.",
+                                                "Rules": [
+                                                    {
+                                                        "Name": "Max one",
+                                                        "ErrorMessage": "Maximum 1",
+                                                        "Type": "MaxPoints",
+                                                        "Value": 1
+                                                    },
+                                                    {
+                                                        "Name": "Xp cost 2",
+                                                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
+                                                        "Type": "Cost",
+                                                        "CostType": "competence",
+                                                        "Value": 2,
+                                                        "Rules": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "Name": "Spécialisation Mage de sang",
+                                "Type": "Group",
+                                "Rules": [],
+                                "Items":[
+                                    {
+                                        "id": "#MageSangLvl4",
+                                        "Name":"Niveau 4",
+                                        "Type": "Group",
+                                        "Rules": [
+                                            {
+                                                "Name": "Level",
+                                                "ErrorMessage": "Doit avoir au moins un sort de niveau 3",
+                                                "Type": "ChildrenIn",
+                                                "Operator": ">=",
+                                                "Value": 1,
+                                                "Subject": { "$ref": "#MageCommunLvl3" }
+                                            }
+                                        ],
+                                        "Items": [
+                                            {
+                                                "Name": "Offrande de sang",
+                                                "Type": "Skill",
+                                                "Description": "Le sorcier peut se mutiler pour amplifier l'effet de son prochain sort. Au coût de 2 points de vie, son prochain sort au pointer bénéficiera d'un bonus de 2 dégâts. Ce sort n'a aucune formule (mais coûte du mana), cependant un acte de mutilation doit être performé par le mage. AUNCUNE phrase d’activation est nécessaire à ce sort, seulement un le geste de mutilation. Le sort n'affecte que les dégâts d'un sort, aucun autre effet. Les sorts de magie de base ainsi que les sorts propre au mage de sang peuvent être augmentés par l’offrande.",
+                                                "Rules": [
+                                                    {
+                                                        "Name": "Max one",
+                                                        "ErrorMessage": "Maximum 1",
+                                                        "Type": "MaxPoints",
+                                                        "Value": 1
+                                                    },
+                                                    {
+                                                        "Name": "Xp cost 1",
+                                                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
+                                                        "Type": "Cost",
+                                                        "CostType": "competence",
+                                                        "Value": 1,
+                                                        "Rules": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "#MageSangLvl5",
+                                        "Name":"Niveau 5",
+                                        "Type": "Group",
+                                        "Rules": [
+                                            {
+                                                "Name": "Level",
+                                                "ErrorMessage": "Doit avoir au moins un sort de niveau 4",
+                                                "Type": "ChildrenIn",
+                                                "Operator": ">=",
+                                                "Value": 1,
+                                                "Subject": { "$ref": "#MageSangLvl4" }
+                                            }
+                                        ],
+                                        "Items": [
+                                            {
+                                                "Name": "Cannibalisme",
+                                                "Type": "Skill",
+                                                "Description": "Le mage consomme un quelconque cadavre de vivant durant 60 secondes, le mage de sang régénère sa santé au complet. Consommer un cadavre peut être questionnable d'un point de vue éthique!",
+                                                "Rules": [
+                                                    {
+                                                        "Name": "Max one",
+                                                        "ErrorMessage": "Maximum 1",
+                                                        "Type": "MaxPoints",
+                                                        "Value": 1
+                                                    },
+                                                    {
+                                                        "Name": "Xp cost 1",
+                                                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
+                                                        "Type": "Cost",
+                                                        "CostType": "competence",
+                                                        "Value": 1,
+                                                        "Rules": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "#MageSangLvl6",
+                                        "Name":"Niveau 6",
+                                        "Type": "Group",
+                                        "Rules": [
+                                            {
+                                                "Name": "Level",
+                                                "ErrorMessage": "Doit avoir au moins un sort de niveau 5",
+                                                "Type": "ChildrenIn",
+                                                "Operator": ">=",
+                                                "Value": 1,
+                                                "Subject": { "$ref": "#MageSangLvl5" }
+                                            }
+                                        ],
+                                        "Items": [
+                                            {
+                                                "Name": "Absorption",
+                                                "Type": "Skill",
+                                                "Description": "Au pointer, le mage fait 2 points de dégâts à la cible. Il se guérit de 2 points de vie.",
+                                                "Rules": [
+                                                    {
+                                                        "Name": "Max one",
+                                                        "ErrorMessage": "Maximum 1",
+                                                        "Type": "MaxPoints",
+                                                        "Value": 1
+                                                    },
+                                                    {
+                                                        "Name": "Xp cost 1",
+                                                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
+                                                        "Type": "Cost",
+                                                        "CostType": "competence",
+                                                        "Value": 1,
+                                                        "Rules": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "#MageSangLvl7",
+                                        "Name":"Niveau 7",
+                                        "Type": "Group",
+                                        "Rules": [
+                                            {
+                                                "Name": "Level",
+                                                "ErrorMessage": "Doit avoir au moins un sort de niveau 6",
+                                                "Type": "ChildrenIn",
+                                                "Operator": ">=",
+                                                "Value": 1,
+                                                "Subject": { "$ref": "#MageSangLvl6" }
+                                            }
+                                        ],
+                                        "Items": [
+                                            {
+                                                "Name": "Sacrifice",
+                                                "Type": "Skill",
+                                                "Description": "Au pointer, le mage canalise toute son énergie vitale manquante en lui en éruption de dégâts. Le mage fait un sort de dommage totalisant sa vie manquante.",
+                                                "Rules": [
+                                                    {
+                                                        "Name": "Max one",
+                                                        "ErrorMessage": "Maximum 1",
+                                                        "Type": "MaxPoints",
+                                                        "Value": 1
+                                                    },
+                                                    {
+                                                        "Name": "Xp cost 2",
+                                                        "ErrorMessage": "Pas assez de points d'expérience disponibles",
+                                                        "Type": "Cost",
+                                                        "CostType": "competence",
+                                                        "Value": 2,
+                                                        "Rules": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
                             }
                         ]
                     }
@@ -1315,9 +1675,10 @@
                 ],
                 "Items": [
                     {
-                        "Name": "Concentration",
+                        "id": "#MagieFeu1",
+                        "Name": "Boule de feu",
                         "Type": "Skill",
-                        "Description": "Ajoute un point de mana/foi maximum supplémentaire par point de compétence utilisé.",
+                        "Description": "Au pointer, 2 points de dégâts à la cible désignée",
                         "Rules": [
                             {
                                 "Name": "Max one",
@@ -1331,6 +1692,34 @@
                                 "Type": "Cost",
                                 "CostType": "competence",
                                 "Value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Embrasement",
+                        "Type": "Skill",
+                        "Description": "Au pointer, 1 point de dégât la cible prend feu et est parcourue de vive brûlure partout sur son corps (effet brûlure).",
+                        "Rules": [
+                            {
+                                "Name": "Max one",
+                                "ErrorMessage": "Maximum 1",
+                                "Type": "MaxPoints",
+                                "Value": 1
+                            },
+                            {
+                                "Name": "Xp cost 1",
+                                "ErrorMessage": "Pas assez de points d'expérience disponibles",
+                                "Type": "Cost",
+                                "CostType": "competence",
+                                "Value": 1
+                            },
+                            {
+                                "Name": "Level",
+                                "ErrorMessage": "Doit avoir le sort de feu de niveau 1",
+                                "Type": "PointsIn",
+                                "Operator": ">=",
+                                "Value": 1,
+                                "Subject": { "$ref": "#MagieFeu1" }
                             }
                         ]
                     }

@@ -28,6 +28,16 @@ export class Player {
         return skills;
     }
 
+    public GetAvailableSkills(): Array<Skill>{
+        let skills = new Array<Skill>();
+        for(let skill of this.GetFlatSkillBook()){
+            if(skill.isValid()){
+                skills.push(skill as Skill);
+            }
+        }
+        return skills;
+    }
+
     GetFlatSkillBook(): Array<Skill>{
         let skills = new Array<Skill>();
         for(let r of this.SkillBook){

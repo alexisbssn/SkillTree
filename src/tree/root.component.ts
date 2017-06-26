@@ -46,6 +46,10 @@ export class RootComponent  {
         return Player.GetInstance().GetTakenSkills();
     }
 
+    GetAvailableSkills(){
+        return Player.GetInstance().GetAvailableSkills();        
+    }
+
     private LogRulebook(){
         console.log(Player.GetInstance().SkillBook);
     }

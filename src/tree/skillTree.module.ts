@@ -7,6 +7,7 @@ import { RootComponent }  from './root.component';
 import { LeafComponent }  from './leaf/leaf.component';
 import { PickListComponent }  from './pickList/pickList.component';
 import { SkillListComponent } from './skill-list/skill-list.component';
+import { PickWallComponent } from './pick-wall/pick-wall.component';
 
 import { RuleablesDAOService } from './DAL/ruleablesDAO.service';
 
@@ -23,7 +24,8 @@ import { RuleablesDAOService } from './DAL/ruleablesDAO.service';
         RootComponent,
         LeafComponent,
         PickListComponent,
-        SkillListComponent
+        SkillListComponent,
+        PickWallComponent
     ],
     providers: [ RuleablesDAOService ],
     exports: [ RootComponent ]

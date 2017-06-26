@@ -16,12 +16,15 @@
         "mapRoot": "/",
         "noEmitOnError": true,
         "noImplicitAny": true,
-        "rootDir": ".",
-        "sourceMap": true,
-        "inlineSources": true
+        "inlineSources": true,
+        "outDir": "../dist/",
+        "rootDirs": [
+            "./",
+            "../dist"
+        ]
     },
     "exclude": [
-        "node_modules/*"
+        "../node_modules/", "../dist"
     ],
     "filesGlob": [
       "**/*.ts"

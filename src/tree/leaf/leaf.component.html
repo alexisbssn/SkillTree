@@ -1,4 +1,4 @@
-<div [class.skillTaken]="skill.PointsIn() > 0">
+<div [class.skillTaken]="skill.PointsIn() > 0" flex>
     <div class="row">
         <div class="col-md-9 col-xs-6 skillNameContainer">
             <h3>{{skill.Name}}</h3>
@@ -10,7 +10,7 @@
         </div>
     </div>
     <div class="row">
-        <p-panel [collapsed]="true" [toggleable]=true class="col-xs-12">
+        <p-panel [collapsed]="!skill.isValid()" [toggleable]=true class="col-xs-12">
             <ul>
                 <li *ngFor="let rule of skill.Rules" [hidden]="rule.IsValid(skill)" class="invalidRuleText">
                     <!--{{rule.Type}} : -->

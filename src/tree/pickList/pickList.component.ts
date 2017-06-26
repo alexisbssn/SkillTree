@@ -1,4 +1,4 @@
-import { Component, Input, ViewEncapsulation } from '@angular/core';
+import { Component, Input, ViewChild, ViewEncapsulation, AfterViewInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { LeafComponent } from '../leaf/leaf.component';
 import { Carousel } from 'primeng/primeng';
@@ -11,7 +11,7 @@ import { Skill } from '../../model/skill';
     encapsulation: ViewEncapsulation.None, // Necessary to style PrimeNg's Carousel.
     styleUrls: ['./pickList.component.css']
 })
-export class PickListComponent  {
+export class PickListComponent {
 
    constructor(private sanitizer: DomSanitizer) {}
 

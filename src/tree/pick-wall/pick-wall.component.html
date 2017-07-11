@@ -1,5 +1,5 @@
 <div class="wall-root">
-    <div class="wall-brick" *ngFor="let skill of Skills">
+    <div class="wall-brick" *ngFor="let skill of Skills" [class.skillTaken]="skill.PointsIn() > 0" [class.skillNormal]="skill.PointsIn() <= 0">
         <tree-leaf [skill]="skill"></tree-leaf>
     </div>
 </div>

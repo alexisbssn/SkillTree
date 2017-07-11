@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ToggleButtonModule } from 'primeng/primeng';
 import { Group } from "../model/group";
 import { Skill } from "../model/skill";
 import { Ruleable } from "../model/ruleable";
@@ -13,13 +14,18 @@ import { RuleablesDAOService } from './DAL/ruleablesDAO.service'
 })
 export class RootComponent  {
     Skillz:Array<Skill>;
+    ShowAll: boolean;
 
     constructor(private dataSource : RuleablesDAOService){
+        this.ShowAll = true;
         this.Skillz = new Array<Skill>();
         dataSource.GetData('../SentiersDeLOubli.json').subscribe(ruleable => {
             Player.GetInstance().SkillBook.push(ruleable);
             this.Skillz = Player.GetInstance().GetFlatSkillBook();
         });
+        for(let i = 0; i < 6; i++) {
+            this.AddSkillPoint();
+        }
     }
 
     private GetAvailablePoints(){
@@ -34,11 +40,11 @@ export class RootComponent  {
         return Player.GetInstance().GetAvailablePoints("spell");
     }
 
-    private AddSkillPoint(type: string){
+    private AddSkillPoint(){
         Player.GetInstance().AddSkillPoints("competence", 1);
     }
 
-    private RemoveSkillPoint(type: string){
+    private RemoveSkillPoint(){
         Player.GetInstance().AddSkillPoints("competence", -1);
     }
 
@@ -46,7 +52,10 @@ export class RootComponent  {
         return Player.GetInstance().GetTakenSkills();
     }
 
-    GetAvailableSkills(){
+    GetDisplaySkills(){
+        if(this.ShowAll){
+            return Player.GetInstance().GetFlatSkillBook();
+        }
         return Player.GetInstance().GetAvailableSkills();        
     }
 

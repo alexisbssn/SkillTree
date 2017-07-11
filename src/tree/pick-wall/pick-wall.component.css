@@ -1,3 +1,14 @@
+.skillTaken{
+    box-shadow: 2px 2px 4px 0 #86ce94;
+    background-color: #b7ffc5;
+}
+
+.skillNormal{
+    box-shadow: 2px 2px 4px 0 #ccc;
+    background-color: #fff;
+}
+
+
 .wall-root{
     margin: 1.5em 0;
     padding: 0;
@@ -21,9 +32,6 @@
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    box-shadow: 2px 2px 4px 0 #ccc;
-    background-color: #fff;
-
     -webkit-transition-property: left, right, top;
      -moz-transition-property: left, right, top;
       -ms-transition-property: left, right, top;

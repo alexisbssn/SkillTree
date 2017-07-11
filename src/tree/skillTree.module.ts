@@ -1,7 +1,8 @@
 import { NgModule }      from '@angular/core';
 import { HttpModule }      from '@angular/http';
 import { BrowserModule } from '@angular/platform-browser';
-import { TreeModule, ButtonModule, CarouselModule, PanelModule } from 'primeng/primeng';
+import { FormsModule } from '@angular/forms';
+import { TreeModule, ButtonModule, CarouselModule, PanelModule, ToggleButtonModule } from 'primeng/primeng';
 
 import { RootComponent }  from './root.component';
 import { LeafComponent }  from './leaf/leaf.component';
@@ -18,7 +19,9 @@ import { RuleablesDAOService } from './DAL/ruleablesDAO.service';
         HttpModule,
         CarouselModule,
         ButtonModule,
-        PanelModule
+        PanelModule,
+        ToggleButtonModule,
+        FormsModule // necessary for ToggleButton
      ],
     declarations: [
         RootComponent,

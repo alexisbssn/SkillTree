@@ -1,9 +1,10 @@
-<button (click)="LogRulebook();">log-me</button>
+<!--<button (click)="LogRulebook();">log-me</button>-->
 <button pButton type="button" class="my-button" (click)="AddSkillPoint()" icon="fa-plus-circle"></button>
 <button pButton type="button" class="my-button" (click)="RemoveSkillPoint()" [disabled]="!(GetAvailablePoints() > 0)" [class.disable-button]="!(GetAvailablePoints() > 0)" icon="fa-minus-circle"></button>
+<p-toggleButton [(ngModel)]="ShowAll" onLabel="Cacher indisponibles" offLabel="Afficher tout"></p-toggleButton>
 <div>Points de compétence total: {{ GetTotalPoints() }}</div>
 <div>Points de compétence restants: {{ GetAvailablePoints() }}</div>
 <div [hidden]="GetAvailableSpellPoints() <= 0">Sorts de départ restants: {{ GetAvailableSpellPoints() }}</div>
 <!--tree-pick-list [Available]="Skillz"></tree-pick-list-->
 <tree-skill-list [Skills]="GetTakenSkills()"></tree-skill-list>
-<tree-pick-wall [Skills]="GetAvailableSkills()"></tree-pick-wall>
+<tree-pick-wall [Skills]="GetDisplaySkills()"></tree-pick-wall>

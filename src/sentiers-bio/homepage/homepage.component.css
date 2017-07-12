@@ -1,0 +1,167 @@
+body
+{
+    background-color: c6c3c3
+   color: noire;
+   font-family : Georgia, Arial, "Times New Roman"; 
+}
+h1
+{
+ font-size : 3em;
+text-align : center;
+}
+h2
+{
+ font-size : 2em;
+  color : black;
+}
+.rouge
+{
+	color: red;
+}
+.souligne
+{
+ text-decoration : underline;
+}
+.gras
+{
+ font-weight : bold ;
+}
+.italique
+{
+font-style : italic;
+}.petit
+{
+font-size : 0.75em;
+}
+.moyen
+{
+font-size : 1em;
+}
+.grand
+{
+font-size : 3em;
+}
+.tresGrand
+{
+font-size : 4em;
+}.gauche
+{
+ text-align : left;
+}
+.droite
+{
+ text-align : right;
+}
+.noire
+{
+	color : black;
+}
+.centre
+{
+ text-align : center;
+}
+.justifie
+{
+ text-align : justify;
+ }
+.Arial
+{
+ font-family : Arial;
+}
+.CourierNew
+{
+ font-family : "Courier New" ;
+}
+.fondBlanc
+{
+ background-color : white;
+}
+.bleu
+{
+ color: blue;
+}
+.vert
+{
+ color: green;
+}
+.turquoise
+{
+	color: #15f3d6
+}
+.imageFlottante
+{
+ float : right ;
+}
+.pepe
+{
+float : left;	
+}
+
+.dessous
+{
+ clear : both;
+}
+p
+{
+font-size : 1em;
+}
+.souligne
+{
+ text-decoration : underline;
+}
+.gras
+{
+ font-weight : bold ;
+}
+.italique
+{
+font-style : italic;
+}
+.petit
+{
+font-size : 0.75em;
+}
+.moyen
+{
+font-size : 1em;
+}
+.grand
+{
+font-size : 3em;
+}
+.tresGrand
+{
+font-size : 4em;
+}
+.gauche
+{
+ text-align : left;
+}
+.droite
+{
+ text-align : right;
+}
+.centre
+{
+ text-align : center;
+}
+.justifie
+{
+ text-align : justify;
+}
+.fondBlanc
+{
+ background-color : white;
+}
+.fondTurquoise
+{
+	background-color : #15f3d6;
+}
+.CourierNew
+{
+ font-family : "Courier New" ;
+}
+.TimesNewRoman
+{
+ font-family : "Times New Roman";
+}

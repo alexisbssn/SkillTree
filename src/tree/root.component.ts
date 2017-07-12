@@ -13,18 +13,17 @@ import { RuleablesDAOService } from './DAL/ruleablesDAO.service'
     providers: [ RuleablesDAOService ]
 })
 export class RootComponent  {
+    Skillz:Array<Skill>;
     ShowAll: boolean;
 
     constructor(private dataSource : RuleablesDAOService){
         this.ShowAll = true;
-
-        //TODO move because this causes a bug when we change page and come back. Load on app start instead?
+        this.Skillz = new Array<Skill>();
         dataSource.GetData('../SentiersDeLOubli.json').subscribe(ruleable => {
             Player.GetInstance().SkillBook.push(ruleable);
+            this.Skillz = Player.GetInstance().GetFlatSkillBook();
         });
-
-        // will reset to 6 every time the component is loaded, only if there was less than 6 when the user left.
-        while(this.GetTotalPoints() < 6) {
+        for(let i = 0; i < 6; i++) {
             this.AddSkillPoint();
         }
     }

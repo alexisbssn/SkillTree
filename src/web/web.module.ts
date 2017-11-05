@@ -13,6 +13,7 @@ import { HeaderComponent } from './header/header.component';
 import { NotFoundComponent } from './notfound/not-found.component';
 
 const appRoutes: Routes = [
+  { path: '', component: HomepageComponent },
   { path: 'home', component: HomepageComponent },
   { path: 'universe', component: UniverseComponent },
   { path: 'skillbook', component: RootComponent },

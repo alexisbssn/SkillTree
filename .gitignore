@@ -14,3 +14,4 @@ _temp
 npm-debug.log*
 /nbproject/private/
 dist
+bundle.min.js.gz
